@@ -1,0 +1,8 @@
+[style]
+based_on_style = google
+indent_width = 2
+column_limit = 100
+
+# If a dictionary value doesn't fit on the same line as the key,
+# then indent it on the following line.
+indent_dictionary_value = true
