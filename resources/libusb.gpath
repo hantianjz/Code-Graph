@@ -1,0 +1,392 @@
+ __.NEXTKEY	196
+ __.VERSION	 __.VERSION 2
+./AUTHORS	1	o
+./COPYING	76	o
+./ChangeLog	28	o
+./INSTALL_WIN.txt	29	o
+./Makefile.am	194	o
+./NEWS	8	o
+./PORTING	9	o
+./README	77	o
+./README.git	20	o
+./README.md	19	o
+./TODO	2	o
+./Xcode/common.xcconfig	15	o
+./Xcode/config.h	11
+./Xcode/debug.xcconfig	13	o
+./Xcode/libusb.xcconfig	16	o
+./Xcode/libusb.xcodeproj/project.pbxproj	17	o
+./Xcode/libusb_debug.xcconfig	12	o
+./Xcode/libusb_release.xcconfig	14	o
+./Xcode/release.xcconfig	18	o
+./android/README	27	o
+./android/config.h	21
+./android/jni/Android.mk	23	o
+./android/jni/Application.mk	22	o
+./android/jni/examples.mk	26	o
+./android/jni/libusb.mk	25	o
+./android/jni/tests.mk	24	o
+./appveyor.yml	89	o
+./autogen.sh	195	o
+./bootstrap.sh	10	o
+./configure.ac	7	o
+./doc/Makefile.in	74	o
+./doc/doxygen.cfg.in	75	o
+./examples/Makefile.am	88	o
+./examples/dpfp.c	82
+./examples/ezusb.c	87
+./examples/ezusb.h	84
+./examples/fxload.c	86
+./examples/hotplugtest.c	79
+./examples/listdevs.c	80
+./examples/sam3u_benchmark.c	83
+./examples/testlibusb.c	81
+./examples/xusb.c	85
+./libusb-1.0.pc.in	78	o
+./libusb/Makefile.am	43	o
+./libusb/Makefile.am.extra	42	o
+./libusb/core.c	39
+./libusb/descriptor.c	33
+./libusb/hotplug.c	30
+./libusb/io.c	31
+./libusb/libusb-1.0.def	36	o
+./libusb/libusb-1.0.rc	32	o
+./libusb/libusb.h	37
+./libusb/libusbi.h	34
+./libusb/os/darwin_usb.c	70
+./libusb/os/darwin_usb.h	55
+./libusb/os/events_posix.c	47
+./libusb/os/events_posix.h	44
+./libusb/os/events_windows.c	51
+./libusb/os/events_windows.h	48
+./libusb/os/haiku_pollfs.cpp	49
+./libusb/os/haiku_usb.h	53
+./libusb/os/haiku_usb_backend.cpp	50
+./libusb/os/haiku_usb_raw.cpp	62
+./libusb/os/haiku_usb_raw.h	71
+./libusb/os/linux_netlink.c	72
+./libusb/os/linux_udev.c	69
+./libusb/os/linux_usbfs.c	63
+./libusb/os/linux_usbfs.h	61
+./libusb/os/netbsd_usb.c	52
+./libusb/os/null_usb.c	67
+./libusb/os/openbsd_usb.c	68
+./libusb/os/sunos_usb.c	65
+./libusb/os/sunos_usb.h	46
+./libusb/os/threads_posix.c	59
+./libusb/os/threads_posix.h	45
+./libusb/os/threads_windows.c	66
+./libusb/os/threads_windows.h	54
+./libusb/os/windows_common.c	58
+./libusb/os/windows_common.h	57
+./libusb/os/windows_usbdk.c	60
+./libusb/os/windows_usbdk.h	73
+./libusb/os/windows_winusb.c	64
+./libusb/os/windows_winusb.h	56
+./libusb/strerror.c	40
+./libusb/sync.c	38
+./libusb/version.h	35
+./libusb/version_nano.h	41
+./msvc/config.h	95
+./msvc/dpfp_2013.vcxproj	131	o
+./msvc/dpfp_2013.vcxproj.filters	118	o
+./msvc/dpfp_2015.vcxproj	107	o
+./msvc/dpfp_2015.vcxproj.filters	179	o
+./msvc/dpfp_2017.vcxproj	161	o
+./msvc/dpfp_2017.vcxproj.filters	96	o
+./msvc/dpfp_2019.vcxproj	137	o
+./msvc/dpfp_2019.vcxproj.filters	105	o
+./msvc/dpfp_threaded_2013.vcxproj	173	o
+./msvc/dpfp_threaded_2013.vcxproj.filters	111	o
+./msvc/dpfp_threaded_2015.vcxproj	94	o
+./msvc/dpfp_threaded_2015.vcxproj.filters	145	o
+./msvc/dpfp_threaded_2017.vcxproj	193	o
+./msvc/dpfp_threaded_2017.vcxproj.filters	177	o
+./msvc/dpfp_threaded_2019.vcxproj	100	o
+./msvc/dpfp_threaded_2019.vcxproj.filters	90	o
+./msvc/fxload_2013.vcxproj	159	o
+./msvc/fxload_2013.vcxproj.filters	91	o
+./msvc/fxload_2015.vcxproj	126	o
+./msvc/fxload_2015.vcxproj.filters	127	o
+./msvc/fxload_2017.vcxproj	129	o
+./msvc/fxload_2017.vcxproj.filters	146	o
+./msvc/fxload_2019.vcxproj	151	o
+./msvc/fxload_2019.vcxproj.filters	116	o
+./msvc/getopt/getopt.c	187
+./msvc/getopt/getopt.h	188
+./msvc/getopt/getopt1.c	189
+./msvc/getopt_2013.vcxproj	132	o
+./msvc/getopt_2013.vcxproj.filters	162	o
+./msvc/getopt_2015.vcxproj	103	o
+./msvc/getopt_2015.vcxproj.filters	133	o
+./msvc/getopt_2017.vcxproj	139	o
+./msvc/getopt_2017.vcxproj.filters	124	o
+./msvc/getopt_2019.vcxproj	160	o
+./msvc/getopt_2019.vcxproj.filters	135	o
+./msvc/hotplugtest_2013.vcxproj	168	o
+./msvc/hotplugtest_2013.vcxproj.filters	142	o
+./msvc/hotplugtest_2015.vcxproj	172	o
+./msvc/hotplugtest_2015.vcxproj.filters	174	o
+./msvc/hotplugtest_2017.vcxproj	97	o
+./msvc/hotplugtest_2017.vcxproj.filters	110	o
+./msvc/hotplugtest_2019.vcxproj	122	o
+./msvc/hotplugtest_2019.vcxproj.filters	115	o
+./msvc/libusb_2013.sln	98	o
+./msvc/libusb_2015.sln	164	o
+./msvc/libusb_2017.sln	192	o
+./msvc/libusb_2019.sln	185	o
+./msvc/libusb_dll_2013.vcxproj	112	o
+./msvc/libusb_dll_2013.vcxproj.filters	138	o
+./msvc/libusb_dll_2015.vcxproj	167	o
+./msvc/libusb_dll_2015.vcxproj.filters	106	o
+./msvc/libusb_dll_2017.vcxproj	176	o
+./msvc/libusb_dll_2017.vcxproj.filters	144	o
+./msvc/libusb_dll_2019.vcxproj	128	o
+./msvc/libusb_dll_2019.vcxproj.filters	170	o
+./msvc/libusb_static_2013.vcxproj	113	o
+./msvc/libusb_static_2013.vcxproj.filters	136	o
+./msvc/libusb_static_2015.vcxproj	171	o
+./msvc/libusb_static_2015.vcxproj.filters	183	o
+./msvc/libusb_static_2017.vcxproj	181	o
+./msvc/libusb_static_2017.vcxproj.filters	186	o
+./msvc/libusb_static_2019.vcxproj	149	o
+./msvc/libusb_static_2019.vcxproj.filters	143	o
+./msvc/listdevs_2013.vcxproj	119	o
+./msvc/listdevs_2013.vcxproj.filters	166	o
+./msvc/listdevs_2015.vcxproj	104	o
+./msvc/listdevs_2015.vcxproj.filters	184	o
+./msvc/listdevs_2017.vcxproj	169	o
+./msvc/listdevs_2017.vcxproj.filters	154	o
+./msvc/listdevs_2019.vcxproj	102	o
+./msvc/listdevs_2019.vcxproj.filters	153	o
+./msvc/sam3u_benchmark_2013.vcxproj	114	o
+./msvc/sam3u_benchmark_2013.vcxproj.filters	92	o
+./msvc/sam3u_benchmark_2015.vcxproj	158	o
+./msvc/sam3u_benchmark_2015.vcxproj.filters	121	o
+./msvc/sam3u_benchmark_2017.vcxproj	117	o
+./msvc/sam3u_benchmark_2017.vcxproj.filters	191	o
+./msvc/sam3u_benchmark_2019.vcxproj	180	o
+./msvc/sam3u_benchmark_2019.vcxproj.filters	152	o
+./msvc/stress_2013.vcxproj	125	o
+./msvc/stress_2013.vcxproj.filters	93	o
+./msvc/stress_2015.vcxproj	182	o
+./msvc/stress_2015.vcxproj.filters	165	o
+./msvc/stress_2017.vcxproj	150	o
+./msvc/stress_2017.vcxproj.filters	109	o
+./msvc/stress_2019.vcxproj	108	o
+./msvc/stress_2019.vcxproj.filters	134	o
+./msvc/testlibusb_2013.vcxproj	157	o
+./msvc/testlibusb_2013.vcxproj.filters	156	o
+./msvc/testlibusb_2015.vcxproj	123	o
+./msvc/testlibusb_2015.vcxproj.filters	148	o
+./msvc/testlibusb_2017.vcxproj	130	o
+./msvc/testlibusb_2017.vcxproj.filters	190	o
+./msvc/testlibusb_2019.vcxproj	175	o
+./msvc/testlibusb_2019.vcxproj.filters	120	o
+./msvc/xusb_2013.vcxproj	140	o
+./msvc/xusb_2013.vcxproj.filters	155	o
+./msvc/xusb_2015.vcxproj	163	o
+./msvc/xusb_2015.vcxproj.filters	178	o
+./msvc/xusb_2017.vcxproj	141	o
+./msvc/xusb_2017.vcxproj.filters	101	o
+./msvc/xusb_2019.vcxproj	99	o
+./msvc/xusb_2019.vcxproj.filters	147	o
+./tests/Makefile.am	6	o
+./tests/libusb_testlib.h	5
+./tests/stress.c	4
+./tests/testlib.c	3
+1	./AUTHORS	o
+10	./bootstrap.sh	o
+100	./msvc/dpfp_threaded_2019.vcxproj	o
+101	./msvc/xusb_2017.vcxproj.filters	o
+102	./msvc/listdevs_2019.vcxproj	o
+103	./msvc/getopt_2015.vcxproj	o
+104	./msvc/listdevs_2015.vcxproj	o
+105	./msvc/dpfp_2019.vcxproj.filters	o
+106	./msvc/libusb_dll_2015.vcxproj.filters	o
+107	./msvc/dpfp_2015.vcxproj	o
+108	./msvc/stress_2019.vcxproj	o
+109	./msvc/stress_2017.vcxproj.filters	o
+11	./Xcode/config.h
+110	./msvc/hotplugtest_2017.vcxproj.filters	o
+111	./msvc/dpfp_threaded_2013.vcxproj.filters	o
+112	./msvc/libusb_dll_2013.vcxproj	o
+113	./msvc/libusb_static_2013.vcxproj	o
+114	./msvc/sam3u_benchmark_2013.vcxproj	o
+115	./msvc/hotplugtest_2019.vcxproj.filters	o
+116	./msvc/fxload_2019.vcxproj.filters	o
+117	./msvc/sam3u_benchmark_2017.vcxproj	o
+118	./msvc/dpfp_2013.vcxproj.filters	o
+119	./msvc/listdevs_2013.vcxproj	o
+12	./Xcode/libusb_debug.xcconfig	o
+120	./msvc/testlibusb_2019.vcxproj.filters	o
+121	./msvc/sam3u_benchmark_2015.vcxproj.filters	o
+122	./msvc/hotplugtest_2019.vcxproj	o
+123	./msvc/testlibusb_2015.vcxproj	o
+124	./msvc/getopt_2017.vcxproj.filters	o
+125	./msvc/stress_2013.vcxproj	o
+126	./msvc/fxload_2015.vcxproj	o
+127	./msvc/fxload_2015.vcxproj.filters	o
+128	./msvc/libusb_dll_2019.vcxproj	o
+129	./msvc/fxload_2017.vcxproj	o
+13	./Xcode/debug.xcconfig	o
+130	./msvc/testlibusb_2017.vcxproj	o
+131	./msvc/dpfp_2013.vcxproj	o
+132	./msvc/getopt_2013.vcxproj	o
+133	./msvc/getopt_2015.vcxproj.filters	o
+134	./msvc/stress_2019.vcxproj.filters	o
+135	./msvc/getopt_2019.vcxproj.filters	o
+136	./msvc/libusb_static_2013.vcxproj.filters	o
+137	./msvc/dpfp_2019.vcxproj	o
+138	./msvc/libusb_dll_2013.vcxproj.filters	o
+139	./msvc/getopt_2017.vcxproj	o
+14	./Xcode/libusb_release.xcconfig	o
+140	./msvc/xusb_2013.vcxproj	o
+141	./msvc/xusb_2017.vcxproj	o
+142	./msvc/hotplugtest_2013.vcxproj.filters	o
+143	./msvc/libusb_static_2019.vcxproj.filters	o
+144	./msvc/libusb_dll_2017.vcxproj.filters	o
+145	./msvc/dpfp_threaded_2015.vcxproj.filters	o
+146	./msvc/fxload_2017.vcxproj.filters	o
+147	./msvc/xusb_2019.vcxproj.filters	o
+148	./msvc/testlibusb_2015.vcxproj.filters	o
+149	./msvc/libusb_static_2019.vcxproj	o
+15	./Xcode/common.xcconfig	o
+150	./msvc/stress_2017.vcxproj	o
+151	./msvc/fxload_2019.vcxproj	o
+152	./msvc/sam3u_benchmark_2019.vcxproj.filters	o
+153	./msvc/listdevs_2019.vcxproj.filters	o
+154	./msvc/listdevs_2017.vcxproj.filters	o
+155	./msvc/xusb_2013.vcxproj.filters	o
+156	./msvc/testlibusb_2013.vcxproj.filters	o
+157	./msvc/testlibusb_2013.vcxproj	o
+158	./msvc/sam3u_benchmark_2015.vcxproj	o
+159	./msvc/fxload_2013.vcxproj	o
+16	./Xcode/libusb.xcconfig	o
+160	./msvc/getopt_2019.vcxproj	o
+161	./msvc/dpfp_2017.vcxproj	o
+162	./msvc/getopt_2013.vcxproj.filters	o
+163	./msvc/xusb_2015.vcxproj	o
+164	./msvc/libusb_2015.sln	o
+165	./msvc/stress_2015.vcxproj.filters	o
+166	./msvc/listdevs_2013.vcxproj.filters	o
+167	./msvc/libusb_dll_2015.vcxproj	o
+168	./msvc/hotplugtest_2013.vcxproj	o
+169	./msvc/listdevs_2017.vcxproj	o
+17	./Xcode/libusb.xcodeproj/project.pbxproj	o
+170	./msvc/libusb_dll_2019.vcxproj.filters	o
+171	./msvc/libusb_static_2015.vcxproj	o
+172	./msvc/hotplugtest_2015.vcxproj	o
+173	./msvc/dpfp_threaded_2013.vcxproj	o
+174	./msvc/hotplugtest_2015.vcxproj.filters	o
+175	./msvc/testlibusb_2019.vcxproj	o
+176	./msvc/libusb_dll_2017.vcxproj	o
+177	./msvc/dpfp_threaded_2017.vcxproj.filters	o
+178	./msvc/xusb_2015.vcxproj.filters	o
+179	./msvc/dpfp_2015.vcxproj.filters	o
+18	./Xcode/release.xcconfig	o
+180	./msvc/sam3u_benchmark_2019.vcxproj	o
+181	./msvc/libusb_static_2017.vcxproj	o
+182	./msvc/stress_2015.vcxproj	o
+183	./msvc/libusb_static_2015.vcxproj.filters	o
+184	./msvc/listdevs_2015.vcxproj.filters	o
+185	./msvc/libusb_2019.sln	o
+186	./msvc/libusb_static_2017.vcxproj.filters	o
+187	./msvc/getopt/getopt.c
+188	./msvc/getopt/getopt.h
+189	./msvc/getopt/getopt1.c
+19	./README.md	o
+190	./msvc/testlibusb_2017.vcxproj.filters	o
+191	./msvc/sam3u_benchmark_2017.vcxproj.filters	o
+192	./msvc/libusb_2017.sln	o
+193	./msvc/dpfp_threaded_2017.vcxproj	o
+194	./Makefile.am	o
+195	./autogen.sh	o
+2	./TODO	o
+20	./README.git	o
+21	./android/config.h
+22	./android/jni/Application.mk	o
+23	./android/jni/Android.mk	o
+24	./android/jni/tests.mk	o
+25	./android/jni/libusb.mk	o
+26	./android/jni/examples.mk	o
+27	./android/README	o
+28	./ChangeLog	o
+29	./INSTALL_WIN.txt	o
+3	./tests/testlib.c
+30	./libusb/hotplug.c
+31	./libusb/io.c
+32	./libusb/libusb-1.0.rc	o
+33	./libusb/descriptor.c
+34	./libusb/libusbi.h
+35	./libusb/version.h
+36	./libusb/libusb-1.0.def	o
+37	./libusb/libusb.h
+38	./libusb/sync.c
+39	./libusb/core.c
+4	./tests/stress.c
+40	./libusb/strerror.c
+41	./libusb/version_nano.h
+42	./libusb/Makefile.am.extra	o
+43	./libusb/Makefile.am	o
+44	./libusb/os/events_posix.h
+45	./libusb/os/threads_posix.h
+46	./libusb/os/sunos_usb.h
+47	./libusb/os/events_posix.c
+48	./libusb/os/events_windows.h
+49	./libusb/os/haiku_pollfs.cpp
+5	./tests/libusb_testlib.h
+50	./libusb/os/haiku_usb_backend.cpp
+51	./libusb/os/events_windows.c
+52	./libusb/os/netbsd_usb.c
+53	./libusb/os/haiku_usb.h
+54	./libusb/os/threads_windows.h
+55	./libusb/os/darwin_usb.h
+56	./libusb/os/windows_winusb.h
+57	./libusb/os/windows_common.h
+58	./libusb/os/windows_common.c
+59	./libusb/os/threads_posix.c
+6	./tests/Makefile.am	o
+60	./libusb/os/windows_usbdk.c
+61	./libusb/os/linux_usbfs.h
+62	./libusb/os/haiku_usb_raw.cpp
+63	./libusb/os/linux_usbfs.c
+64	./libusb/os/windows_winusb.c
+65	./libusb/os/sunos_usb.c
+66	./libusb/os/threads_windows.c
+67	./libusb/os/null_usb.c
+68	./libusb/os/openbsd_usb.c
+69	./libusb/os/linux_udev.c
+7	./configure.ac	o
+70	./libusb/os/darwin_usb.c
+71	./libusb/os/haiku_usb_raw.h
+72	./libusb/os/linux_netlink.c
+73	./libusb/os/windows_usbdk.h
+74	./doc/Makefile.in	o
+75	./doc/doxygen.cfg.in	o
+76	./COPYING	o
+77	./README	o
+78	./libusb-1.0.pc.in	o
+79	./examples/hotplugtest.c
+8	./NEWS	o
+80	./examples/listdevs.c
+81	./examples/testlibusb.c
+82	./examples/dpfp.c
+83	./examples/sam3u_benchmark.c
+84	./examples/ezusb.h
+85	./examples/xusb.c
+86	./examples/fxload.c
+87	./examples/ezusb.c
+88	./examples/Makefile.am	o
+89	./appveyor.yml	o
+9	./PORTING	o
+90	./msvc/dpfp_threaded_2019.vcxproj.filters	o
+91	./msvc/fxload_2013.vcxproj.filters	o
+92	./msvc/sam3u_benchmark_2013.vcxproj.filters	o
+93	./msvc/stress_2013.vcxproj.filters	o
+94	./msvc/dpfp_threaded_2015.vcxproj	o
+95	./msvc/config.h
+96	./msvc/dpfp_2017.vcxproj.filters	o
+97	./msvc/hotplugtest_2017.vcxproj	o
+98	./msvc/libusb_2013.sln	o
+99	./msvc/xusb_2019.vcxproj	o

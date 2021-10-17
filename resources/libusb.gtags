@@ -1,0 +1,1940 @@
+ __.COMPNAME	 __.COMPNAME
+ __.COMPRESS	 __.COMPRESS ddefine ttypedef
+ __.VERSION	 __.VERSION 6
+ALLOW_PARTIAL_READS	56 @n 422 #@d @n	0x05
+API_EXPORTED	34 @n 130 #@d @n LIBUSB_CALL DEFAULT_VISIBILITY
+ARRAYSIZE	86 @n 49 #@d @n(A) (sizeof(A)/sizeof((A)[0]))
+ARRAYSIZE	34 @n 59 #@d @n(array) (sizeof(array) / sizeof(array[0]))
+ASSERT_EQ	34 @n 51 #@d @n(expression, value)	assert(expression == value)
+ASSERT_EQ	34 @n 48 #@d @n(expression, value)	(void)expression
+ASSERT_NE	34 @n 52 #@d @n(expression, value)	assert(expression != value)
+ASSERT_NE	34 @n 49 #@d @n(expression, value)	(void)expression
+AUTO_CLEAR_STALL	56 @n 419 #@d @n	0x02
+AUTO_FLUSH	56 @n 423 #@d @n		0x06
+ActiveConfiguration	50 @n 393 USBDevice::@n() const
+ActiveConfigurationIndex	50 @n 399 USBDevice::@n() const
+B	85 @n 68 #@d @n(x) (((x)!=0)?1:0)
+BOMS_GET_MAX_LUN	85 @n 89 #@d @n@{14}0xFE
+BOMS_RESET	85 @n 88 #@d @n@{20}0xFF
+B_USB_RAW_ACTIVE_ALTERNATE	71 @n 12 #@d @n	0xffffffff
+B_USB_RAW_COMMAND_BULK_TRANSFER	71 @n 39 	@n,
+B_USB_RAW_COMMAND_CLEAR_FEATURE	71 @n 32 	@n,
+B_USB_RAW_COMMAND_CONTROL_TRANSFER	71 @n 37 	@n = 0x4000,
+B_USB_RAW_COMMAND_GET_ACTIVE_ALT_INTERFACE_INDEX	71 @n 24 	@n,
+B_USB_RAW_COMMAND_GET_ALT_INTERFACE_COUNT	71 @n 23 	@n,
+B_USB_RAW_COMMAND_GET_CONFIGURATION_DESCRIPTOR	71 @n 18 	@n,
+B_USB_RAW_COMMAND_GET_CONFIGURATION_DESCRIPTOR_ETC	71 @n 28 	@n,
+B_USB_RAW_COMMAND_GET_DESCRIPTOR	71 @n 34 	@n,
+B_USB_RAW_COMMAND_GET_DEVICE_DESCRIPTOR	71 @n 17 	@n = 0x2000,
+B_USB_RAW_COMMAND_GET_ENDPOINT_DESCRIPTOR	71 @n 20 	@n,
+B_USB_RAW_COMMAND_GET_ENDPOINT_DESCRIPTOR_ETC	71 @n 26 	@n,
+B_USB_RAW_COMMAND_GET_GENERIC_DESCRIPTOR	71 @n 22 	@n,
+B_USB_RAW_COMMAND_GET_GENERIC_DESCRIPTOR_ETC	71 @n 27 	@n,
+B_USB_RAW_COMMAND_GET_INTERFACE_DESCRIPTOR	71 @n 19 	@n,
+B_USB_RAW_COMMAND_GET_INTERFACE_DESCRIPTOR_ETC	71 @n 25 	@n,
+B_USB_RAW_COMMAND_GET_STATUS	71 @n 33 	@n,
+B_USB_RAW_COMMAND_GET_STRING_DESCRIPTOR	71 @n 21 	@n,
+B_USB_RAW_COMMAND_GET_VERSION	71 @n 15 	@n = 0x1000,
+B_USB_RAW_COMMAND_INTERRUPT_TRANSFER	71 @n 38 	@n,
+B_USB_RAW_COMMAND_ISOCHRONOUS_TRANSFER	71 @n 40 	@n
+B_USB_RAW_COMMAND_SET_ALT_INTERFACE	71 @n 35 	@n,
+B_USB_RAW_COMMAND_SET_CONFIGURATION	71 @n 30 	@n = 0x3000,
+B_USB_RAW_COMMAND_SET_FEATURE	71 @n 31 	@n,
+B_USB_RAW_PROTOCOL_VERSION	71 @n 11 #@d @n	0x0015
+B_USB_RAW_STATUS_ABORTED	71 @n 48 	@n,
+B_USB_RAW_STATUS_CRC_ERROR	71 @n 50 	@n,
+B_USB_RAW_STATUS_FAILED	71 @n 47 	@n,
+B_USB_RAW_STATUS_INVALID_CONFIGURATION	71 @n 53 	@n,
+B_USB_RAW_STATUS_INVALID_ENDPOINT	71 @n 55 	@n,
+B_USB_RAW_STATUS_INVALID_INTERFACE	71 @n 54 	@n,
+B_USB_RAW_STATUS_INVALID_STRING	71 @n 56 	@n,
+B_USB_RAW_STATUS_NO_MEMORY	71 @n 58 	@n
+B_USB_RAW_STATUS_STALLED	71 @n 49 	@n,
+B_USB_RAW_STATUS_SUCCESS	71 @n 45 	@n = 0,
+B_USB_RAW_STATUS_TIMEOUT	71 @n 51 	@n,
+BulkTransferType	73 @n 50 	@n,
+CALL_CHECK	85 @n 66 #@d @n(fcall) do { int _r=fcall; if (_r < 0) ERR_EXIT(_r); } while (0)
+CALL_CHECK_CLOSE	85 @n 67 #@d @n(fcall, hdl) do { int _r=fcall; if (_r < 0) { libusb_close(hdl); ERR_EXIT(_r); } } while (0)
+CANCELLED	63 @n 144 	@n,
+CHECK_HID_AVAILABLE	64 @n 100 #@d @n				\
+CHECK_SUPPORTED_API	56 @n 102 #@d @n(apip, fname)			\
+CHECK_WINUSBX_AVAILABLE	64 @n 92 #@d @n(sub_api)		\
+CLAMP	34 @n 63 #@d @n(val, min, max) \
+COMPLETED_EARLY	63 @n 147 	@n,
+CONFIGRET	56 @n 228 @t RETURN_TYPE @n;
+CONFIG_DESC_EP_BINTERVAL_OFFSET	64 @n 809 #@d @n		0x18
+CONFIG_DESC_EP_MAX_PACKET_OFFSET	64 @n 808 #@d @n	0x16
+CONFIG_DESC_WTOTAL_LENGTH_OFFSET	64 @n 807 #@d @n	0x02
+CR_SUCCESS	56 @n 230 #@d @n	0x00000000
+CTRL_IN	82 @n 143 #@d @n			(LIBUSB_REQUEST_TYPE_VENDOR | LIBUSB_ENDPOINT_IN)
+CTRL_OUT	82 @n 144 #@d @n		(LIBUSB_REQUEST_TYPE_VENDOR | LIBUSB_ENDPOINT_OUT)
+CancelTransfer	50 @n 212 USBDeviceHandle::@n(USBTransfer *transfer)
+CheckInterfacesFree	50 @n 421 USBDevice::@n(uint8 config)
+ClaimInterface	50 @n 404 int USBDevice::@n(uint8 interface)
+ClaimInterface	50 @n 255 USBDeviceHandle::@n(uint8 inumber)
+ClearHalt	50 @n 313 USBDeviceHandle::@n(uint8 endpoint)
+ConfigurationDescriptor	50 @n 385 USBDevice::@n(uint8 index) const
+ControlTransferType	73 @n 49 	@n,
+CountConfigurations	50 @n 373 USBDevice::@n() const
+DARWIN_CACHED_DEVICE	70 @n 75 #@d @n(a) (((struct darwin_device_priv *)usbi_get_device_priv((a)))->dev)
+DARWIN_REENUMERATE_TIMEOUT_US	70 @n 46 #@d @n 10000000
+DEFAULT_LISTSIZE	65 @n 47 #@d	@n	6
+DEFAULT_VISIBILITY	95 @n 42 #@d @n /**/
+DEFAULT_VISIBILITY	21 @n 21 #@d @n __attribute__ ((visibility ("default")))
+DEFAULT_VISIBILITY	11 @n 6 #@d @n __attribute__ ((visibility ("default")))
+DESC_HEADER_LENGTH	33 @n 26 #@d @n	2
+DEVICE_CTX	34 @n 331 #@d @n(dev)		((dev)->ctx)
+DEVINST	56 @n 225 @t DWORD DEVNODE, @n;
+DEVNODE	56 @n 225 @t DWORD @n, DEVINST;
+DEVPATH	68 @n 114 #@d @n	"/dev/"
+DEV_PASS	64 @n 1455 #@d @n 1
+DISCOVERED_DEVICES_SIZE_STEP	39 @n 638 #@d @n 16
+DLL_DECLARE_FUNC	57 @n 99 #@d @n(api, ret, name, args)				\
+DLL_DECLARE_FUNC_PREFIXED	57 @n 101 #@d @n(api, ret, prefix, name, args)		\
+DLL_DECLARE_FUNC_PREFIXNAME	57 @n 95 #@d @n(api, ret, prefixname, name, args)	\
+DLL_DECLARE_HANDLE	57 @n 71 #@d @n(name)					\
+DLL_FREE_HANDLE	57 @n 82 #@d @n(name)						\
+DLL_FUNC_NAME	57 @n 93 #@d @n(name) __dll_##name##_func_t
+DLL_GET_HANDLE	57 @n 74 #@d @n(ctx, name)					\
+DLL_HANDLE_NAME	57 @n 69 #@d @n(name) __dll_##name##_handle
+DLL_LOAD_FUNC	57 @n 123 #@d @n(dll, name, ret_on_failure)			\
+DLL_LOAD_FUNC_PREFIXED	57 @n 125 #@d @n(dll, prefix, name, ret_on_failure)	\
+DLL_LOAD_FUNC_PREFIXNAME	57 @n 104 #@d @n(dll, prefixname, name, ret_on_failure)	\
+DLL_STRINGIFY	57 @n 64 #@d @n(s) #s
+Descriptor	50 @n 379 USBDevice::@n() const
+DeviceCausedOvercurrent	56 @n 285 	@n,
+DeviceConnected	56 @n 282 	@n,
+DeviceEnumerating	56 @n 290 	@n,
+DeviceFailedEnumeration	56 @n 283 	@n,
+DeviceGeneralFailure	56 @n 284 	@n,
+DeviceHubNestedTooDeeply	56 @n 288 	@n,
+DeviceInLegacyHub	56 @n 289 	@n,
+DeviceInterfaceID	55 @n 128 #@d @n kIOUSB@n300
+DeviceInterfaceID	55 @n 135 #@d @n kIOUSB@n245
+DeviceInterfaceID	55 @n 142 #@d @n kIOUSB@n197
+DeviceInterfaceID	55 @n 114 #@d @n kIOUSB@n500
+DeviceInterfaceID	55 @n 121 #@d @n kIOUSB@n320
+DeviceInterfaceID	55 @n 107 #@d @n kIOUSB@n650
+DeviceNotEnoughBandwidth	56 @n 287 	@n,
+DeviceNotEnoughPower	56 @n 286 	@n,
+DeviceReset	56 @n 291 	@n
+DeviceVersion	55 @n 129 #@d @n 300
+DeviceVersion	55 @n 136 #@d @n 245
+DeviceVersion	55 @n 143 #@d @n 197
+DeviceVersion	55 @n 115 #@d @n 500
+DeviceVersion	55 @n 122 #@d @n 320
+DeviceVersion	55 @n 108 #@d @n 650
+Do	50 @n 65 USBTransfer::@n(int fRawFD)
+ELIDE_CODE	189 @n 49 #@d @n
+ELIDE_CODE	187 @n 56 #  @d @n
+ENABLE_LOGGING	95 @n 48 #@d @n 1
+ENABLE_LOGGING	21 @n 27 #@d @n 1
+ENABLE_LOGGING	11 @n 9 #@d @n 1
+EPOCH_TIME	58 @n 32 #@d @n	UINT64_C(116444736000000000)	// 1970.01.01 00:00:000 in MS Filetime
+EP_DATA	82 @n 142 #@d @n			(2 | LIBUSB_ENDPOINT_IN)
+EP_DATA_IN	83 @n 38 #@d @n	0x82
+EP_INTR	82 @n 141 #@d @n			(1 | LIBUSB_ENDPOINT_IN)
+EP_ISO_IN	83 @n 39 #@d @n	0x86
+ERROR	63 @n 150 	@n,
+ERROR_NO_SUCH_DEVICE	57 @n 142 #@d @n	433L
+ERR_EXIT	85 @n 65 #@d @n(errcode) do { perr("   %s\n", libusb_strerror((enum libusb_error)errcode)); return -1; } while (0)
+EVENT_READ_FD	47 @n 37 #@d @n(e)	((e)->pipefd[0])
+EVENT_READ_FD	47 @n 34 #@d @n(e)	((e)->eventfd)
+EVENT_WRITE_FD	47 @n 38 #@d @n(e)	((e)->pipefd[1])
+EVENT_WRITE_FD	47 @n 35 #@d @n(e)	((e)->eventfd)
+EXT_PASS	64 @n 1459 #@d @n 5
+EndpointToIndex	50 @n 437 USBDevice::@n(uint8 address) const
+EndpointToInterface	50 @n 443 USBDevice::@n(uint8 address) const
+EntryCreated	49 @n 191 WatchedEntry::@n(entry_ref *ref)
+EntryRemoved	49 @n 216 WatchedEntry::@n(ino_t node)
+FILE_DEVICE_USB	56 @n 258 #@d @n	FILE_DEVICE_UNKNOWN
+FIRMWARE	86 @n 79 #@d @n 0
+FXLOAD_VERSION	86 @n 45 #@d @n (__DATE__ " (libusb)")
+FX_KNOWN_DEVICES	84 @n 60 #@d @n { \
+FX_TYPE_AN21	84 @n 29 #@d @n@70	/* Original AnchorChips parts */
+FX_TYPE_FX1	84 @n 30 #@d @n@81	/* Updated Cypress versions */
+FX_TYPE_FX2	84 @n 31 #@d @n@82	/* USB 2.0 versions */
+FX_TYPE_FX2LP	84 @n 32 #@d @n@63	/* Updated FX2 */
+FX_TYPE_FX3	84 @n 33 #@d @n@84	/* USB 3.0 versions */
+FX_TYPE_MAX	84 @n 34 #@d @n@85
+FX_TYPE_NAMES	84 @n 35 #@d @n@6{ "an21", "fx", "fx2", "fx2lp", "fx3" }
+FX_TYPE_UNDEFINED	84 @n 28 #@d @n  -1
+FullSpeed	73 @n 43 	@n,
+GEN_PASS	64 @n 1457 #@d @n 3
+GETOPT_INTERFACE_VERSION	189 @n 45 #@d @n 2
+GETOPT_INTERFACE_VERSION	187 @n 52 #@d @n 2
+GUID_SIZE_STEP	64 @n 1461 #@d @n 8
+HANDLE_CTX	34 @n 332 #@d @n(handle)	(DEVICE_CTX((handle)->dev))
+HANDLE_VALID	64 @n 36 #@d @n(h) (((h) != NULL) && ((h) != INVALID_HANDLE_VALUE))
+HAS_CAPTURE_DEVICE	55 @n 170   #@d @n() 0
+HAS_CAPTURE_DEVICE	55 @n 168   #@d @n() __builtin_available(macOS 10.10, *)
+HAVE_ASM_TYPES_H	21 @n 30 #@d @n 1
+HAVE_CLOCK_GETTIME	21 @n 33 #@d @n 1
+HAVE_CLOCK_GETTIME	11 @n 14 #@d @n 1
+HAVE_NFDS_T	21 @n 36 #@d @n 1
+HAVE_NFDS_T	11 @n 24 #@d @n 1
+HAVE_OS_TIMER	48 @n 34 #@d @n 1
+HAVE_OS_TIMER	44 @n 46 #@d @n 1
+HAVE_PIPE2	21 @n 39 #@d @n 1
+HAVE_PTHREAD_THREADID_NP	11 @n 20 #@d @n 1
+HAVE_STRUCT_TIMESPEC	54 @n 61 #@d @n 1
+HAVE_SYS_TIME_H	21 @n 42 #@d @n 1
+HAVE_SYS_TIME_H	11 @n 27 #@d @n 1
+HCD_PASS	64 @n 1456 #@d @n 2
+HIDD_ATTRIBUTES	56 @n 701 } @n, *P@n;
+HIDP_CAPS	56 @n 723 } @n, *P@n;
+HIDP_REPORT_TYPE	56 @n 729 } @n;
+HIDP_STATUS_SUCCESS	56 @n 691 #@d @n	0x110000
+HIDP_VALUE_CAPS	56 @n 766 } @n, *P@n;
+HID_GET_IDLE	85 @n 78 #@d @n@{18}0x02
+HID_GET_PROTOCOL	85 @n 79 #@d @n@{14}0x03
+HID_GET_REPORT	85 @n 77 #@d @n@{16}0x01
+HID_IN_CTL_CODE	56 @n 138 #@d @n(id) \
+HID_IN_EP	56 @n 130 #@d @n			0x81
+HID_MAX_CONFIG_DESC_SIZE	56 @n 127 #@d @n (LIBUSB_DT_CONFIG_SIZE + LIBUSB_DT_INTERFACE_SIZE \
+HID_MAX_REPORT_SIZE	56 @n 129 #@d @n		1024
+HID_OUT_CTL_CODE	56 @n 140 #@d @n(id) \
+HID_OUT_EP	56 @n 131 #@d @n			0x02
+HID_PASS	64 @n 1458 #@d @n 4
+HID_REPORT_TYPE_FEATURE	85 @n 85 #@d @n@70x03
+HID_REPORT_TYPE_FEATURE	56 @n 160 	@n = 0x03
+HID_REPORT_TYPE_INPUT	85 @n 83 #@d @n@90x01
+HID_REPORT_TYPE_INPUT	56 @n 158 	@n = 0x01,
+HID_REPORT_TYPE_OUTPUT	85 @n 84 #@d @n@80x02
+HID_REPORT_TYPE_OUTPUT	56 @n 159 	@n = 0x02,
+HID_REQ_GET_IDLE	56 @n 150 	@n = 0x02,
+HID_REQ_GET_PROTOCOL	56 @n 151 	@n = 0x03,
+HID_REQ_GET_REPORT	56 @n 149 	@n = 0x01,
+HID_REQ_SET_IDLE	56 @n 153 	@n = 0x0A,
+HID_REQ_SET_PROTOCOL	56 @n 154 	@n = 0x0B
+HID_REQ_SET_REPORT	56 @n 152 	@n = 0x09,
+HID_SET_IDLE	85 @n 81 #@d @n@{18}0x0A
+HID_SET_PROTOCOL	85 @n 82 #@d @n@{14}0x0B
+HID_SET_REPORT	85 @n 80 #@d @n@{16}0x09
+HTAB_SIZE	58 @n 130 #@d @n 1021UL	// *MUST* be a prime number!!
+HUB_PASS	64 @n 1454 #@d @n 0
+HidP_Feature	56 @n 728 	@n
+HidP_Input	56 @n 726 	@n,
+HidP_Output	56 @n 727 	@n,
+HighSpeed	73 @n 44 	@n,
+IGNORE_SHORT_PACKETS	56 @n 421 #@d @n	0x04
+IMG_TYPE_BIX	84 @n 40 #@d @n@72	/* Cypress 8051 BIX */
+IMG_TYPE_HEX	84 @n 38 #@d @n@70	/* Intel HEX */
+IMG_TYPE_IIC	84 @n 39 #@d @n@71	/* Cypress 8051 IIC */
+IMG_TYPE_IMG	84 @n 41 #@d @n@73	/* Cypress IMG format */
+IMG_TYPE_MAX	84 @n 42 #@d @n@74
+IMG_TYPE_NAMES	84 @n 43 #@d @n@5{ "Intel HEX", "Cypress 8051 IIC", "Cypress 8051 BIX", "Cypress IMG format" }
+IMG_TYPE_UNDEFINED	84 @n 37 #@d @n -1
+INQUIRY_LENGTH	85 @n 73 #@d @n@{16}0x24
+INTERFACE_CLAIMED	56 @n 41 #@d @n	((HANDLE)(intptr_t)0xD1B5)
+INTR_LENGTH	82 @n 146 #@d @n		64
+IOCTL_HID_GET_FEATURE	56 @n 143 #@d @n		HID_OUT_CTL_CODE(100)
+IOCTL_HID_GET_INPUT_REPORT	56 @n 144 #@d @n	HID_OUT_CTL_CODE(104)
+IOCTL_HID_SET_FEATURE	56 @n 145 #@d @n		HID_IN_CTL_CODE(100)
+IOCTL_HID_SET_OUTPUT_REPORT	56 @n 146 #@d @n	HID_IN_CTL_CODE(101)
+IOCTL_USBFS_ALLOC_STREAMS	61 @n 155 #@d @n	_IOR('U', 28, struct usbfs_streams)
+IOCTL_USBFS_CLAIMINTERFACE	61 @n 145 #@d @n	_IOR('U', 15, unsigned int)
+IOCTL_USBFS_CLEAR_HALT	61 @n 150 #@d @n		_IOR('U', 21, unsigned int)
+IOCTL_USBFS_CONNECT	61 @n 152 #@d @n		_IO('U', 23)
+IOCTL_USBFS_CONNECTINFO	61 @n 147 #@d @n		_IOW('U', 17, struct usbfs_connectinfo)
+IOCTL_USBFS_CONTROL	61 @n 138 #@d @n		_IOWR('U', 0, struct usbfs_ctrltransfer)
+IOCTL_USBFS_DISCARDURB	61 @n 143 #@d @n		_IO('U', 11)
+IOCTL_USBFS_DISCONNECT	61 @n 151 #@d @n		_IO('U', 22)
+IOCTL_USBFS_DISCONNECT_CLAIM	61 @n 154 #@d @n	_IOR('U', 27, struct usbfs_disconnect_claim)
+IOCTL_USBFS_DROP_PRIVILEGES	61 @n 157 #@d @n	_IOW('U', 30, __u32)
+IOCTL_USBFS_FREE_STREAMS	61 @n 156 #@d @n	_IOR('U', 29, struct usbfs_streams)
+IOCTL_USBFS_GETDRIVER	61 @n 141 #@d @n		_IOW('U', 8, struct usbfs_getdriver)
+IOCTL_USBFS_GET_CAPABILITIES	61 @n 153 #@d @n	_IOR('U', 26, __u32)
+IOCTL_USBFS_GET_SPEED	61 @n 158 #@d @n		_IO('U', 31)
+IOCTL_USBFS_IOCTL	61 @n 148 #@d @n		_IOWR('U', 18, struct usbfs_ioctl)
+IOCTL_USBFS_REAPURBNDELAY	61 @n 144 #@d @n	_IOW('U', 13, void *)
+IOCTL_USBFS_RELEASEINTERFACE	61 @n 146 #@d @n	_IOR('U', 16, unsigned int)
+IOCTL_USBFS_RESET	61 @n 149 #@d @n		_IO('U', 20)
+IOCTL_USBFS_SETCONFIGURATION	61 @n 140 #@d @n	_IOR('U', 5, unsigned int)
+IOCTL_USBFS_SETINTERFACE	61 @n 139 #@d @n	_IOR('U', 4, struct usbfs_setinterface)
+IOCTL_USBFS_SUBMITURB	61 @n 142 #@d @n		_IOR('U', 10, struct usbfs_urb)
+IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION	56 @n 271 #@d @n \
+IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX	56 @n 274 #@d @n \
+IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2	56 @n 277 #@d @n \
+IOCTL_USB_GET_NODE_INFORMATION	56 @n 268 #@d @n \
+IO_OBJECT_NULL	55 @n 160 #@d @n ((io_object_t) 0)
+ISO_ALWAYS_START_ASAP	56 @n 427 #@d @n	0x21
+IS_EPIN	34 @n 337 #@d @n(ep)		(0 != ((ep) & LIBUSB_ENDPOINT_IN))
+IS_EPOUT	34 @n 338 #@d @n(ep)		(!IS_EPIN(ep))
+IS_XFERIN	34 @n 339 #@d @n(xfer)		(0 != ((xfer)->endpoint & LIBUSB_ENDPOINT_IN))
+IS_XFEROUT	34 @n 340 #@d @n(xfer)	(!IS_XFERIN(xfer))
+ITRANSFER_CTX	34 @n 334 #@d @n(itransfer) \
+InitCheck	50 @n 170 USBDeviceHandle::@n()
+InitCheck	50 @n 361 USBDevice::@n()
+InitCheck	49 @n 332 RosterLooper::@n()
+InitCheck	49 @n 244 WatchedEntry::@n()
+Initialise	50 @n 449 USBDevice::@n()		//Do we need more error checking, etc? How to report?
+InterfaceInterfaceID	55 @n 71 #@d @n kIOUSB@n500
+InterfaceInterfaceID	55 @n 78 #@d @n kIOUSB@n300
+InterfaceInterfaceID	55 @n 85 #@d @n kIOUSB@n245
+InterfaceInterfaceID	55 @n 92 #@d @n kIOUSB@n220
+InterfaceInterfaceID	55 @n 57 #@d @n kIOUSB@n650
+InterfaceInterfaceID	55 @n 64 #@d @n kIOUSB@n550
+InterfaceInterfaceID	55 @n 50 #@d @n kIOUSB@n700
+InterfaceInterfaceID	55 @n 43 #@d @n kIOUSB@n800
+InterfaceVersion	55 @n 79 #@d @n 300
+InterfaceVersion	55 @n 86 #@d @n 245
+InterfaceVersion	55 @n 93 #@d @n 220
+InterfaceVersion	55 @n 58 #@d @n 650
+InterfaceVersion	55 @n 65 #@d @n 550
+InterfaceVersion	55 @n 72 #@d @n 500
+InterfaceVersion	55 @n 51 #@d @n 700
+InterfaceVersion	55 @n 44 #@d @n 800
+InterruptTransferType	73 @n 51 	@n,
+IsCancelled	50 @n 59 USBTransfer::@n()
+IsochronousTransferType	73 @n 52 	@n
+KISO_CONTEXT	56 @n 637 } @n, *P@n;
+KISO_FLAG	56 @n 627 } @n;
+KISO_FLAG_NONE	56 @n 625 	@n = 0,
+KISO_FLAG_SET_START_FRAME	56 @n 626 	@n = 0x00000001,
+KISO_PACKET	56 @n 622 } @n, *P@n;
+KLIB_VERSION	56 @n 601 } @n, *P@n;
+KUSB_FNID	56 @n 594 } @n;
+KUSB_FNID_AbortPipe	56 @n 586 	@n,
+KUSB_FNID_COUNT	56 @n 593 	@n,
+KUSB_FNID_ClaimInterface	56 @n 561 	@n,
+KUSB_FNID_Clone	56 @n 575 	@n,
+KUSB_FNID_ControlTransfer	56 @n 566 	@n,
+KUSB_FNID_FlushPipe	56 @n 587 	@n,
+KUSB_FNID_Free	56 @n 560 	@n,
+KUSB_FNID_GetAltInterface	56 @n 564 	@n,
+KUSB_FNID_GetAssociatedInterface	56 @n 574 	@n,
+KUSB_FNID_GetConfiguration	56 @n 570 	@n,
+KUSB_FNID_GetCurrentAlternateSetting	56 @n 579 	@n,
+KUSB_FNID_GetCurrentFrameNumber	56 @n 590 	@n,
+KUSB_FNID_GetDescriptor	56 @n 565 	@n,
+KUSB_FNID_GetOverlappedResult	56 @n 591 	@n,
+KUSB_FNID_GetPipePolicy	56 @n 582 	@n,
+KUSB_FNID_GetPowerPolicy	56 @n 568 	@n,
+KUSB_FNID_GetProperty	56 @n 592 	@n,
+KUSB_FNID_Init	56 @n 559 	@n,
+KUSB_FNID_Initialize	56 @n 572 	@n,
+KUSB_FNID_IsoReadPipe	56 @n 588 	@n,
+KUSB_FNID_IsoWritePipe	56 @n 589 	@n,
+KUSB_FNID_QueryDeviceInformation	56 @n 577 	@n,
+KUSB_FNID_QueryInterfaceSettings	56 @n 576 	@n,
+KUSB_FNID_QueryPipe	56 @n 580 	@n,
+KUSB_FNID_ReadPipe	56 @n 583 	@n,
+KUSB_FNID_ReleaseInterface	56 @n 562 	@n,
+KUSB_FNID_ResetDevice	56 @n 571 	@n,
+KUSB_FNID_ResetPipe	56 @n 585 	@n,
+KUSB_FNID_SelectInterface	56 @n 573 	@n,
+KUSB_FNID_SetAltInterface	56 @n 563 	@n,
+KUSB_FNID_SetConfiguration	56 @n 569 	@n,
+KUSB_FNID_SetCurrentAlternateSetting	56 @n 578 	@n,
+KUSB_FNID_SetPipePolicy	56 @n 581 	@n,
+KUSB_FNID_SetPowerPolicy	56 @n 567 	@n,
+KUSB_FNID_WritePipe	56 @n 584 	@n,
+LIBUSBI_H	34 @n 25 #@d @n
+LIBUSBX_API_VERSION	37 @n 142 #@d @n LIBUSB_API_VERSION
+LIBUSB_API_VERSION	37 @n 139 #@d @n 0x01000108
+LIBUSB_BM_LPM_SUPPORT	37 @n 493 	@n = (1 << 1)
+LIBUSB_BM_LTM_SUPPORT	37 @n 503 	@n = (1 << 1)
+LIBUSB_BT_CONTAINER_ID	37 @n 520 	@n = 0x04
+LIBUSB_BT_CONTAINER_ID_SIZE	37 @n 301 #@d @n		20
+LIBUSB_BT_SS_USB_DEVICE_CAPABILITY	37 @n 517 	@n = 0x03,
+LIBUSB_BT_SS_USB_DEVICE_CAPABILITY_SIZE	37 @n 300 #@d @n	10
+LIBUSB_BT_USB_2_0_EXTENSION	37 @n 514 	@n = 0x02,
+LIBUSB_BT_USB_2_0_EXTENSION_SIZE	37 @n 299 #@d @n	7
+LIBUSB_BT_WIRELESS_USB_DEVICE_CAPABILITY	37 @n 511 	@n = 0x01,
+LIBUSB_CALL	37 @n 116 #@d @n
+LIBUSB_CALL	37 @n 114 #@d @n WINAPI
+LIBUSB_CAP_HAS_CAPABILITY	37 @n 1290 	@n = 0x0000U,
+LIBUSB_CAP_HAS_HID_ACCESS	37 @n 1299 	@n = 0x0100U,
+LIBUSB_CAP_HAS_HOTPLUG	37 @n 1293 	@n = 0x0001U,
+LIBUSB_CAP_SUPPORTS_DETACH_KERNEL_DRIVER	37 @n 1303 	@n = 0x0101U
+LIBUSB_CLASS_APPLICATION	37 @n 238 	@n = 0xfe,
+LIBUSB_CLASS_AUDIO	37 @n 189 	@n = 0x01,
+LIBUSB_CLASS_COMM	37 @n 192 	@n = 0x02,
+LIBUSB_CLASS_CONTENT_SECURITY	37 @n 220 	@n = 0x0d,
+LIBUSB_CLASS_DATA	37 @n 214 	@n = 0x0a,
+LIBUSB_CLASS_DIAGNOSTIC_DEVICE	37 @n 229 	@n = 0xdc,
+LIBUSB_CLASS_HID	37 @n 195 	@n = 0x03,
+LIBUSB_CLASS_HUB	37 @n 211 	@n = 0x09,
+LIBUSB_CLASS_IMAGE	37 @n 201 	@n = 0x06,
+LIBUSB_CLASS_MASS_STORAGE	37 @n 208 	@n = 0x08,
+LIBUSB_CLASS_MISCELLANEOUS	37 @n 235 	@n = 0xef,
+LIBUSB_CLASS_PERSONAL_HEALTHCARE	37 @n 226 	@n = 0x0f,
+LIBUSB_CLASS_PER_INTERFACE	37 @n 186 	@n = 0x00,
+LIBUSB_CLASS_PHYSICAL	37 @n 198 	@n = 0x05,
+LIBUSB_CLASS_PRINTER	37 @n 205 	@n = 0x07,
+LIBUSB_CLASS_PTP	37 @n 202 	@n = 0x06, /* legacy name from libusb-0.1 usb.h */
+LIBUSB_CLASS_SMART_CARD	37 @n 217 	@n = 0x0b,
+LIBUSB_CLASS_VENDOR_SPEC	37 @n 241 	@n = 0xff
+LIBUSB_CLASS_VIDEO	37 @n 223 	@n = 0x0e,
+LIBUSB_CLASS_WIRELESS	37 @n 232 	@n = 0xe0,
+LIBUSB_COMPLETED	56 @n 43 #@d @n	(LIBUSB_SUCCESS + 1)
+LIBUSB_CONTROL_SETUP_SIZE	37 @n 939 #@d @n (sizeof(struct libusb_control_setup))
+LIBUSB_DARWIN_H	55 @n 22 #@d @n
+LIBUSB_DARWIN_STARTUP_FAILURE	70 @n 66 #@d @n ((CFRunLoopRef) -1)
+LIBUSB_DEPRECATED_FOR	37 @n 70 #@d @n(f) __attribute__ ((deprecated))
+LIBUSB_DEPRECATED_FOR	37 @n 72 #@d @n(f)
+LIBUSB_DEPRECATED_FOR	37 @n 68 #@d @n(f) __attribute__ ((deprecated ("Use " #f " instead")))
+LIBUSB_DEPRECATED_FOR	37 @n 1357 @n(libusb_set_option)
+LIBUSB_DT_BOS	37 @n 263 	@n = 0x0f,
+LIBUSB_DT_BOS_MAX_SIZE	37 @n 304 #@d @n				\
+LIBUSB_DT_BOS_SIZE	37 @n 295 #@d @n			5
+LIBUSB_DT_CONFIG	37 @n 251 	@n = 0x02,
+LIBUSB_DT_CONFIG_SIZE	37 @n 289 #@d @n			9
+LIBUSB_DT_DEVICE	37 @n 248 	@n = 0x01,
+LIBUSB_DT_DEVICE_CAPABILITY	37 @n 266 	@n = 0x10,
+LIBUSB_DT_DEVICE_CAPABILITY_SIZE	37 @n 296 #@d @n	3
+LIBUSB_DT_DEVICE_SIZE	37 @n 288 #@d @n			18
+LIBUSB_DT_ENDPOINT	37 @n 260 	@n = 0x05,
+LIBUSB_DT_ENDPOINT_AUDIO_SIZE	37 @n 292 #@d @n		9	/* Audio extension */
+LIBUSB_DT_ENDPOINT_SIZE	37 @n 291 #@d @n			7
+LIBUSB_DT_HID	37 @n 269 	@n = 0x21,
+LIBUSB_DT_HID_SIZE	56 @n 126 #@d @n		9
+LIBUSB_DT_HUB	37 @n 278 	@n = 0x29,
+LIBUSB_DT_HUB_NONVAR_SIZE	37 @n 293 #@d @n		7
+LIBUSB_DT_INTERFACE	37 @n 257 	@n = 0x04,
+LIBUSB_DT_INTERFACE_SIZE	37 @n 290 #@d @n		9
+LIBUSB_DT_PHYSICAL	37 @n 275 	@n = 0x23,
+LIBUSB_DT_REPORT	37 @n 272 	@n = 0x22,
+LIBUSB_DT_SS_ENDPOINT_COMPANION	37 @n 284 	@n = 0x30
+LIBUSB_DT_SS_ENDPOINT_COMPANION_SIZE	37 @n 294 #@d @n	6
+LIBUSB_DT_STRING	37 @n 254 	@n = 0x03,
+LIBUSB_DT_SUPERSPEED_HUB	37 @n 281 	@n = 0x2a,
+LIBUSB_ENDPOINT_ADDRESS_MASK	37 @n 310 #@d @n		0x0f	/* in bEndpointAddress */
+LIBUSB_ENDPOINT_DIR_MASK	37 @n 311 #@d @n		0x80
+LIBUSB_ENDPOINT_IN	37 @n 322 	@n = 0x80
+LIBUSB_ENDPOINT_OUT	37 @n 319 	@n = 0x00,
+LIBUSB_ENDPOINT_TRANSFER_TYPE_BULK	37 @n 339 	@n = 0x2,
+LIBUSB_ENDPOINT_TRANSFER_TYPE_CONTROL	37 @n 333 	@n = 0x0,
+LIBUSB_ENDPOINT_TRANSFER_TYPE_INTERRUPT	37 @n 342 	@n = 0x3
+LIBUSB_ENDPOINT_TRANSFER_TYPE_ISOCHRONOUS	37 @n 336 	@n = 0x1,
+LIBUSB_ERROR_ACCESS	37 @n 1058 	@n = -3,
+LIBUSB_ERROR_BUSY	37 @n 1067 	@n = -6,
+LIBUSB_ERROR_COUNT	37 @n 1095 #@d @n 14
+LIBUSB_ERROR_INTERRUPTED	37 @n 1079 	@n = -10,
+LIBUSB_ERROR_INVALID_PARAM	37 @n 1055 	@n = -2,
+LIBUSB_ERROR_IO	37 @n 1052 	@n = -1,
+LIBUSB_ERROR_NOT_FOUND	37 @n 1064 	@n = -5,
+LIBUSB_ERROR_NOT_SUPPORTED	37 @n 1085 	@n = -12,
+LIBUSB_ERROR_NO_DEVICE	37 @n 1061 	@n = -4,
+LIBUSB_ERROR_NO_MEM	37 @n 1082 	@n = -11,
+LIBUSB_ERROR_OTHER	37 @n 1091 	@n = -99
+LIBUSB_ERROR_OVERFLOW	37 @n 1073 	@n = -8,
+LIBUSB_ERROR_PIPE	37 @n 1076 	@n = -9,
+LIBUSB_ERROR_TIMEOUT	37 @n 1070 	@n = -7,
+LIBUSB_EVENTS_POSIX_H	44 @n 22 #@d @n
+LIBUSB_EVENTS_WINDOWS_H	48 @n 22 #@d @n
+LIBUSB_FULL_SPEED_OPERATION	37 @n 477 	@n = (1 << 1),
+LIBUSB_H	37 @n 26 #@d @n
+LIBUSB_HIGH_SPEED_OPERATION	37 @n 480 	@n = (1 << 2),
+LIBUSB_HOTPLUG_ENUMERATE	37 @n 1963 	@n = (1 << 0)
+LIBUSB_HOTPLUG_EVENT_DEVICE_ARRIVED	37 @n 1948 	@n = (1 << 0),
+LIBUSB_HOTPLUG_EVENT_DEVICE_LEFT	37 @n 1953 	@n = (1 << 1)
+LIBUSB_HOTPLUG_MATCH_ANY	37 @n 1972 #@d @n -1
+LIBUSB_HOTPLUG_NO_FLAGS	37 @n 1968 #@d @n 0
+LIBUSB_ISO_SYNC_TYPE_ADAPTIVE	37 @n 444 	@n = 0x2,
+LIBUSB_ISO_SYNC_TYPE_ASYNC	37 @n 441 	@n = 0x1,
+LIBUSB_ISO_SYNC_TYPE_MASK	37 @n 429 #@d @n	0x0c
+LIBUSB_ISO_SYNC_TYPE_NONE	37 @n 438 	@n = 0x0,
+LIBUSB_ISO_SYNC_TYPE_SYNC	37 @n 447 	@n = 0x3
+LIBUSB_ISO_USAGE_TYPE_DATA	37 @n 459 	@n = 0x0,
+LIBUSB_ISO_USAGE_TYPE_FEEDBACK	37 @n 462 	@n = 0x1,
+LIBUSB_ISO_USAGE_TYPE_IMPLICIT	37 @n 465 	@n = 0x2
+LIBUSB_ISO_USAGE_TYPE_MASK	37 @n 450 #@d @n	0x30
+LIBUSB_LOG_CB_CONTEXT	37 @n 1338 	@n = (1 << 1)
+LIBUSB_LOG_CB_GLOBAL	37 @n 1335 	@n = (1 << 0),
+LIBUSB_LOG_LEVEL_DEBUG	37 @n 1323 	@n = 4
+LIBUSB_LOG_LEVEL_ERROR	37 @n 1314 	@n = 1,
+LIBUSB_LOG_LEVEL_INFO	37 @n 1320 	@n = 3,
+LIBUSB_LOG_LEVEL_NONE	37 @n 1311 	@n = 0,
+LIBUSB_LOG_LEVEL_WARNING	37 @n 1317 	@n = 2,
+LIBUSB_LOW_SPEED_OPERATION	37 @n 474 	@n = (1 << 0),
+LIBUSB_MAJOR	35 @n 4 #@d @n 1
+LIBUSB_MICRO	35 @n 10 #@d @n 24
+LIBUSB_MINOR	35 @n 7 #@d @n 0
+LIBUSB_NANO	41 @n 1 #@d @n 11656
+LIBUSB_NANO	35 @n 13 #@d @n 0
+LIBUSB_NULL_TEST	5 @n 60 #@d @n { NULL, NULL }
+LIBUSB_OPTION_LOG_LEVEL	37 @n 2090 	@n = 0,
+LIBUSB_OPTION_MAX	37 @n 2124 	@n = 4
+LIBUSB_OPTION_NO_DEVICE_DISCOVERY	37 @n 2116 	@n = 2,
+LIBUSB_OPTION_USE_USBDK	37 @n 2099 	@n = 1,
+LIBUSB_OPTION_WEAK_AUTHORITY	37 @n 2122 	@n = 3,
+LIBUSB_PACKED	37 @n 78 #@d @n
+LIBUSB_PACKED	37 @n 76 #@d @n __attribute__ ((packed))
+LIBUSB_PRINTF_WIN32	34 @n 309 #@d @n
+LIBUSB_RC	35 @n 17 #@d @n ""
+LIBUSB_RECIPIENT_DEVICE	37 @n 417 	@n = 0x00,
+LIBUSB_RECIPIENT_ENDPOINT	37 @n 423 	@n = 0x02,
+LIBUSB_RECIPIENT_INTERFACE	37 @n 420 	@n = 0x01,
+LIBUSB_RECIPIENT_OTHER	37 @n 426 	@n = 0x03
+LIBUSB_REQUEST_CLEAR_FEATURE	37 @n 352 	@n = 0x01,
+LIBUSB_REQUEST_GET_CONFIGURATION	37 @n 371 	@n = 0x08,
+LIBUSB_REQUEST_GET_DESCRIPTOR	37 @n 365 	@n = 0x06,
+LIBUSB_REQUEST_GET_INTERFACE	37 @n 377 	@n = 0x0a,
+LIBUSB_REQUEST_GET_STATUS	37 @n 349 	@n = 0x00,
+LIBUSB_REQUEST_SET_ADDRESS	37 @n 362 	@n = 0x05,
+LIBUSB_REQUEST_SET_CONFIGURATION	37 @n 374 	@n = 0x09,
+LIBUSB_REQUEST_SET_DESCRIPTOR	37 @n 368 	@n = 0x07,
+LIBUSB_REQUEST_SET_FEATURE	37 @n 357 	@n = 0x03,
+LIBUSB_REQUEST_SET_INTERFACE	37 @n 380 	@n = 0x0b,
+LIBUSB_REQUEST_SET_SEL	37 @n 386 	@n = 0x30,
+LIBUSB_REQUEST_SYNCH_FRAME	37 @n 383 	@n = 0x0c,
+LIBUSB_REQUEST_TYPE_CLASS	37 @n 402 	@n = (0x01 << 5),
+LIBUSB_REQUEST_TYPE_RESERVED	37 @n 408 	@n = (0x03 << 5)
+LIBUSB_REQUEST_TYPE_STANDARD	37 @n 399 	@n = (0x00 << 5),
+LIBUSB_REQUEST_TYPE_VENDOR	37 @n 405 	@n = (0x02 << 5),
+LIBUSB_REQ_IN	56 @n 134 #@d @n(request_type)		((request_type) & LIBUSB_ENDPOINT_IN)
+LIBUSB_REQ_OUT	56 @n 135 #@d @n(request_type)		(!LIBUSB_REQ_IN(request_type))
+LIBUSB_REQ_RECIPIENT	56 @n 132 #@d @n(request_type)	((request_type) & 0x1F)
+LIBUSB_REQ_TYPE	56 @n 133 #@d @n(request_type)		((request_type) & (0x03 << 5))
+LIBUSB_SET_ISOCH_DELAY	37 @n 390 	@n = 0x31
+LIBUSB_SPEED_FULL	37 @n 1028 	@n = 2,
+LIBUSB_SPEED_HIGH	37 @n 1031 	@n = 3,
+LIBUSB_SPEED_LOW	37 @n 1025 	@n = 1,
+LIBUSB_SPEED_SUPER	37 @n 1034 	@n = 4,
+LIBUSB_SPEED_SUPER_PLUS	37 @n 1037 	@n = 5
+LIBUSB_SPEED_UNKNOWN	37 @n 1022 	@n = 0,
+LIBUSB_SUCCESS	37 @n 1049 	@n = 0,
+LIBUSB_SUNOS_H	46 @n 21 #@d	@n
+LIBUSB_SUPER_SPEED_OPERATION	37 @n 483 	@n = (1 << 3)
+LIBUSB_TESTLIB_H	5 @n 21 #@d @n
+LIBUSB_THREADS_POSIX_H	45 @n 22 #@d @n
+LIBUSB_THREADS_WINDOWS_H	54 @n 22 #@d @n
+LIBUSB_TRANSFER_ADD_ZERO_PACKET	37 @n 1187 	@n = (1U << 3)
+LIBUSB_TRANSFER_CANCELLED	37 @n 1130 	@n,
+LIBUSB_TRANSFER_COMPLETED	37 @n 1121 	@n,
+LIBUSB_TRANSFER_ERROR	37 @n 1124 	@n,
+LIBUSB_TRANSFER_FREE_BUFFER	37 @n 1156 	@n = (1U << 1),
+LIBUSB_TRANSFER_FREE_TRANSFER	37 @n 1162 	@n = (1U << 2),
+LIBUSB_TRANSFER_NO_DEVICE	37 @n 1137 	@n,
+LIBUSB_TRANSFER_OVERFLOW	37 @n 1140 	@n
+LIBUSB_TRANSFER_SHORT_NOT_OK	37 @n 1150 	@n = (1U << 0),
+LIBUSB_TRANSFER_STALL	37 @n 1134 	@n,
+LIBUSB_TRANSFER_TIMED_OUT	37 @n 1127 	@n,
+LIBUSB_TRANSFER_TO_USBI_TRANSFER	34 @n 605 #@d @n(transfer)	\
+LIBUSB_TRANSFER_TYPE_BULK	37 @n 1107 	@n = 2U,
+LIBUSB_TRANSFER_TYPE_BULK_STREAM	37 @n 1113 	@n = 4U
+LIBUSB_TRANSFER_TYPE_CONTROL	37 @n 1101 	@n = 0U,
+LIBUSB_TRANSFER_TYPE_INTERRUPT	37 @n 1110 	@n = 3U,
+LIBUSB_TRANSFER_TYPE_ISOCHRONOUS	37 @n 1104 	@n = 1U,
+LIBUSB_TRANSFER_TYPE_MASK	37 @n 325 #@d @n		0x03	/* in bmAttributes */
+LIBUSB_USBFS_H	61 @n 22 #@d @n
+LIBUSB_WINDOWS_COMMON_H	57 @n 29 #@d @n
+LIBUSB_WINDOWS_USBDK_H	73 @n 25 #@d @n
+LIBUSB_WINDOWS_WINUSB_H	56 @n 24 #@d @n
+LIST_COUNT	4 @n 80 #@d @n 100
+LIST_COUNT	4 @n 114 #undef @n
+LIST_SEPARATOR	56 @n 38 #@d @n		';'
+LOADER	86 @n 80 #@d @n 1
+LOOP_BREAK	64 @n 39 #@d @n(err)				\
+Location	50 @n 367 USBDevice::@n() const
+LowSpeed	73 @n 42 	@n,
+MAX	34 @n 72 #@d @n(a, b)	((a) > (b) ? (a) : (b))
+MAXIMUM_TRANSFER_SIZE	56 @n 425 #@d @n	0x08
+MAX_BULK_BUFFER_LENGTH	61 @n 73 #@d @n		16384
+MAX_CTRL_BUFFER_LENGTH	61 @n 74 #@d @n		4096
+MAX_CTRL_BUFFER_LENGTH	56 @n 31 #@d @n	4096
+MAX_DEVICE_ID_LEN	57 @n 193 #@d @n	200
+MAX_GUID_STRING_LENGTH	56 @n 35 #@d @n	40
+MAX_HID_DESCRIPTOR_SIZE	56 @n 34 #@d @n	256
+MAX_HID_REPORT_SIZE	56 @n 33 #@d @n	1024
+MAX_ISO_PACKETS_PER_URB	61 @n 76 #@d @n		128
+MAX_KEY_LENGTH	56 @n 37 #@d @n		256
+MAX_OS_FD_LENGTH	85 @n 708 #@d @n 256
+MAX_PATH_LENGTH	56 @n 36 #@d @n		256
+MAX_USB_STRING_LENGTH	56 @n 32 #@d @n	128
+MIN	34 @n 68 #@d @n(a, b)	((a) < (b) ? (a) : (b))
+MODE_AWAIT_FINGER_OFF	82 @n 151 	@n = 0x12,
+MODE_AWAIT_FINGER_ON	82 @n 150 	@n = 0x10,
+MODE_CAPTURE	82 @n 152 	@n = 0x20,
+MODE_INIT	82 @n 149 	@n = 0x00,
+MODE_READY	82 @n 154 	@n = 0x80,
+MODE_SHUT_UP	82 @n 153 	@n = 0x30,
+MS_OS_DESC_STRING_INDEX	85 @n 92 #@d @n		0xEE
+MS_OS_DESC_STRING_LENGTH	85 @n 93 #@d @n	0x12
+MS_OS_DESC_VENDOR_CODE_OFFSET	85 @n 94 #@d @n	0x10
+MessageReceived	49 @n 298 RosterLooper::@n(BMessage *message)
+NL_GROUP_KERNEL	72 @n 40 #@d @n 1
+NONOPTION_P	187 @n 545 # @d @n (argv[optind][0] != '-' || argv[optind][1] == '\0')
+NONOPTION_P	187 @n 541 # @d @n (argv[optind][0] != '-' || argv[optind][1] == '\0'	@6\
+NORMAL	63 @n 138 	@n = 0,
+NSEC_PER_SEC	34 @n 263 #@d @n	1000000000L
+NTSTATUS	60 @n 33 @t LONG @n;
+NULL	189 @n 63 #@d @n 0
+NULL_PATH	3 @n 33 #@d @n "nul"
+NULL_PATH	3 @n 31 #@d @n "/dev/null"
+NoDeviceConnected	56 @n 281 	@n,
+NoSpeed	73 @n 41 	@n = 0,
+OBJC_SILENCE_GC_DEPRECATIONS	70 @n 42 #@d @n 1
+PDEVINST	56 @n 226 @t DEVNODE *PDEVNODE, *@n;
+PDEVNODE	56 @n 226 @t DEVNODE *@n, *PDEVINST;
+PERMUTE	187 @n 187   REQUIRE_ORDER, @n, RETURN_IN_ORDER
+PHIDD_ATTRIBUTES	56 @n 701 } HIDD_ATTRIBUTES, *@n;
+PHIDP_CAPS	56 @n 723 } HIDP_CAPS, *@n;
+PHIDP_PREPARSED_DATA	56 @n 692 @t void * @n;
+PHIDP_VALUE_CAPS	56 @n 766 } HIDP_VALUE_CAPS, *@n;
+PIPE_TRANSFER_TIMEOUT	56 @n 420 #@d @n	0x03
+PKISO_CONTEXT	56 @n 637 } KISO_CONTEXT, *@n;
+PKISO_PACKET	56 @n 622 } KISO_PACKET, *@n;
+PKLIB_VERSION	56 @n 601 } KLIB_VERSION, *@n;
+PLATFORM_POSIX	21 @n 45 #@d @n 1
+PLATFORM_POSIX	11 @n 30 #@d @n 1
+PLATFORM_WINDOWS	95 @n 51 #@d @n 1
+PRINTF_FORMAT	21 @n 49 #@d @n(a, b) __attribute__ ((__format__ (__printf__, a, b)))
+PRINTF_FORMAT	95 @n 55 #@d @n(a, b) /**/
+PRINTF_FORMAT	11 @n 34 #@d @n(a, b) __attribute__ ((__format__ (__printf__, a, b)))
+PRINT_UNSUPPORTED_API	56 @n 98 #@d @n(fname)				\
+PTHREAD_CHECK	45 @n 26 #@d @n(expression)	ASSERT_EQ(expression, 0)
+PTR_ALIGN	34 @n 83 #@d @n(v) \
+PUSBD_ISO_PACKET_DESCRIPTOR	56 @n 433 } USBD_ISO_PACKET_DESCRIPTOR, *@n;
+PUSB_CONFIGURATION_DESCRIPTOR	57 @n 189 } USB_CONFIGURATION_DESCRIPTOR, *@n;
+PUSB_DESCRIPTOR_REQUEST	56 @n 349 } USB_DESCRIPTOR_REQUEST, *@n;
+PUSB_DEVICE_DESCRIPTOR	57 @n 178 } USB_DEVICE_DESCRIPTOR, *@n;
+PUSB_DK_CONFIG_DESCRIPTOR_REQUEST	73 @n 32 } USB_DK_CONFIG_DESCRIPTOR_REQUEST, *@n;
+PUSB_DK_DEVICE_ID	57 @n 198 } USB_DK_DEVICE_ID, *@n;
+PUSB_DK_DEVICE_INFO	57 @n 206 } USB_DK_DEVICE_INFO, *@n;
+PUSB_DK_GEN_TRANSFER_RESULT	57 @n 216 } USB_DK_GEN_TRANSFER_RESULT, *@n;
+PUSB_DK_ISO_TRANSFER_RESULT	57 @n 211 } USB_DK_ISO_TRANSFER_RESULT, *@n;
+PUSB_DK_TRANSFER_REQUEST	57 @n 231 } USB_DK_TRANSFER_REQUEST, *@n;
+PUSB_DK_TRANSFER_RESULT	57 @n 221 } USB_DK_TRANSFER_RESULT, *@n;
+PUSB_HUB_DESCRIPTOR	56 @n 324 } USB_HUB_DESCRIPTOR, *@n;
+PUSB_HUB_INFORMATION	56 @n 329 } USB_HUB_INFORMATION, *@n;
+PUSB_INTERFACE_DESCRIPTOR	56 @n 366 } USB_INTERFACE_DESCRIPTOR, *@n;
+PUSB_NODE_CONNECTION_INFORMATION_EX	56 @n 378 } USB_NODE_CONNECTION_INFORMATION_EX, *@n;
+PUSB_NODE_CONNECTION_INFORMATION_EX_V2	56 @n 406 } USB_NODE_CONNECTION_INFORMATION_EX_V2, *@n;
+PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS	56 @n 399 } USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, *@n;
+PUSB_NODE_INFORMATION	56 @n 337 } USB_NODE_INFORMATION, *@n;
+PUSB_PROTOCOLS	56 @n 388 } USB_PROTOCOLS, *@n;
+PWINUSB_INTERFACE_HANDLE	56 @n 462 @t PVOID WINUSB_INTERFACE_HANDLE, *@n;
+PWINUSB_ISOCH_BUFFER_HANDLE	56 @n 463 @t PVOID WINUSB_ISOCH_BUFFER_HANDLE, *@n;
+PWINUSB_PIPE_INFORMATION_EX	56 @n 448 } WINUSB_PIPE_INFORMATION_EX, *@n;
+PWINUSB_SETUP_PACKET	56 @n 458 } WINUSB_SETUP_PACKET, *@n;
+RAW_IO	56 @n 424 #@d @n			0x07
+READ	46 @n 27 #@d	@n	0
+READ_CAPACITY_LENGTH	85 @n 74 #@d @n@{10}0x08
+READ_LE16	33 @n 33 #@d @n(p) ((uint16_t)	\
+READ_LE32	33 @n 37 #@d @n(p) ((uint32_t)	\
+REQUEST_SENSE_LENGTH	85 @n 72 #@d @n@{10}0x12
+REQUIRE_ORDER	187 @n 187   @n, PERMUTE, RETURN_IN_ORDER
+RETRY_LIMIT	87 @n 503 #@d @n 5
+RETRY_MAX	85 @n 71 #@d @n@{21}5
+RETURN_IN_ORDER	187 @n 187   REQUIRE_ORDER, PERMUTE, @n
+RETURN_TYPE	56 @n 227 @t DWORD @n;
+ROOT_HUB_FS_CONFIG_DESC_LENGTH	64 @n 804 #@d @n		0x19
+ROOT_HUB_HS_CONFIG_DESC_LENGTH	64 @n 805 #@d @n		0x19
+ROOT_HUB_SS_CONFIG_DESC_LENGTH	64 @n 806 #@d @n		0x1f
+RW_INTERNAL	87 @n 119 #@d @n@50xA0	/* hardware implements this one */
+RW_MEMORY	87 @n 120 #@d @n@70xA3
+ReleaseInterface	50 @n 414 int USBDevice::@n(uint8 interface)
+ReleaseInterface	50 @n 264 USBDeviceHandle::@n(uint8 inumber)
+RosterLooper	49 @n 39 class @n : public BLooper {
+SHORT_PACKET_TERMINATE	56 @n 418 #@d @n	0x01
+SOCK_CLOEXEC	72 @n 43 #@d @n	0
+SOCK_NONBLOCK	72 @n 47 #@d @n	0
+STATE_AWAIT_IMAGE	82 @n 163 	@n,
+STATE_AWAIT_IRQ_FINGER_DETECTED	82 @n 161 	@n,
+STATE_AWAIT_IRQ_FINGER_REMOVED	82 @n 165 	@n,
+STATE_AWAIT_MODE_CHANGE_AWAIT_FINGER_OFF	82 @n 164 	@n,
+STATE_AWAIT_MODE_CHANGE_AWAIT_FINGER_ON	82 @n 160 	@n = 1,
+STATE_AWAIT_MODE_CHANGE_CAPTURE	82 @n 162 	@n,
+STATUS_CANCELLED	60 @n 38 #@d @n		((NTSTATUS)0xC0000120L)
+STATUS_REQUEST_CANCELED	60 @n 42 #@d @n		((NTSTATUS)0xC0000703L)
+STATUS_SUCCESS	60 @n 34 #@d @n			((NTSTATUS)0x00000000L)
+STATUS_SUCCESS	58 @n 34 #@d @n	((ULONG_PTR)0UL)
+SUBMIT_FAILED	63 @n 141 	@n,
+SUB_API_LIBUSB0	56 @n 70 #@d @n		1
+SUB_API_LIBUSBK	56 @n 69 #@d @n		0
+SUB_API_MAX	56 @n 72 #@d @n		3
+SUB_API_NOTSET	56 @n 68 #@d @n		-1
+SUB_API_WINUSB	56 @n 71 #@d @n		2
+SWAP_FLAGS	187 @n 284 #  @d @n(ch1, ch2)
+SWAP_FLAGS	187 @n 287 # @d @n(ch1, ch2)
+SWAP_FLAGS	187 @n 276 #  @d @n(ch1, ch2) \
+SYSFS_DEVICE_PATH	61 @n 28 #@d @n	SYSFS_MOUNT_PATH "/bus/usb/devices"
+SYSFS_MOUNT_PATH	61 @n 27 #@d @n	"/sys"
+SecTaskRef	70 @n 2385 @t struct __SecTask *@n;
+SetActiveConfiguration	50 @n 431 USBDevice::@n(uint8 config_index)
+SetAltSetting	50 @n 288 USBDeviceHandle::@n(uint8 inumber, uint8 alt)
+SetCancelled	50 @n 53 USBTransfer::@n()
+SetConfiguration	50 @n 272 USBDeviceHandle::@n(uint8 config)
+Start	49 @n 351 USBRoster::@n()
+Stop	49 @n 366 USBRoster::@n()
+Stop	49 @n 288 RosterLooper::@n()
+SubmitTransfer	50 @n 201 USBDeviceHandle::@n(struct usbi_transfer *itransfer)
+SuperSpeed	73 @n 45 	@n
+TEST_STATUS_ERROR	5 @n 32 	@n,
+TEST_STATUS_FAILURE	5 @n 30 	@n,
+TEST_STATUS_SKIP	5 @n 35 	@n
+TEST_STATUS_SUCCESS	5 @n 28 	@n,
+THREAD_RETURN_VALUE	82 @n 91 #@d @n	0
+THREAD_RETURN_VALUE	82 @n 47 #@d @n	NULL
+TIMESPEC_CLEAR	34 @n 271 #@d @n(ts)	(ts)->tv_sec = (ts)->tv_nsec = 0
+TIMESPEC_CMP	34 @n 272 #@d @n(a, b, CMP)						\
+TIMESPEC_IS_SET	34 @n 270 #@d @n(ts)	((ts)->tv_sec || (ts)->tv_nsec)
+TIMESPEC_SUB	34 @n 276 #@d @n(a, b, result)					\
+TIMESPEC_TO_TIMEVAL	34 @n 294 #@d @n(tv, ts)					\
+TIMEVAL_IS_VALID	34 @n 266 #@d @n(tv)						\
+TIMEVAL_TV_SEC_TYPE	34 @n 289 #@d @n	time_t
+TIMEVAL_TV_SEC_TYPE	34 @n 287 #@d @n	long
+TRANSFER_CTX	34 @n 333 #@d @n(transfer)	(HANDLE_CTX((transfer)->dev_handle))
+TransferFailure	73 @n 35 	@n = 0,
+TransferResult	73 @n 38 } @n;
+TransferSuccess	73 @n 36 	@n,
+TransferSuccessAsync	73 @n 37 	@n
+TransfersThread	50 @n 176 USBDeviceHandle::@n(void *self)
+TransfersWorker	50 @n 184 USBDeviceHandle::@n()
+ULONG_CAST	57 @n 47 #@d @n(x)	((unsigned long)(x))
+ULONG_CAST	57 @n 45 #@d @n(x)	(x)
+UNREF_SIZE_STEP	64 @n 1470 #@d @n 16
+UNUSED	34 @n 79 #@d @n(var)	do { (void)(var); } while(0)
+UNUSED	34 @n 77 #@d @n(var)	UNREFERENCED_PARAMETER(var)
+UPDATEDRV	65 @n 45 #@d @n	"update_drv"
+UPDATEDRV_PATH	65 @n 44 #@d @n	"/usr/sbin/update_drv"
+USAGE	56 @n 705 @t USHORT @n;
+USBDEV	68 @n 115 #@d @n	DEVPATH "usb"
+USBDEV_PATH	63 @n 75 #@d @n		"/dev"
+USBD_ISO_PACKET_DESCRIPTOR	56 @n 433 } @n, *P@n;
+USBD_PIPE_TYPE	56 @n 440 } @n;
+USBD_STATUS	57 @n 130 @t LONG @n;
+USBD_STATUS_CANCELED	57 @n 137 #@d @n		((USBD_STATUS)0xC0010000L)
+USBD_STATUS_DEVICE_GONE	57 @n 136 #@d @n		((USBD_STATUS)0xC0007000L)
+USBD_STATUS_ENDPOINT_HALTED	57 @n 134 #@d @n	((USBD_STATUS)0xC0000030L)
+USBD_STATUS_TIMEOUT	57 @n 135 #@d @n		((USBD_STATUS)0xC0006000L)
+USBD_SUCCESS	57 @n 132 #@d @n(Status)		((USBD_STATUS)(Status) >= 0)
+USBDevice	50 @n 344 @n::~@n()
+USBDeviceHandle	50 @n 241 @n::~@n()
+USBFS_CAP_BULK_CONTINUATION	61 @n 110 #@d @n		0x02
+USBFS_CAP_BULK_SCATTER_GATHER	61 @n 112 #@d @n		0x08
+USBFS_CAP_NO_PACKET_SIZE_LIM	61 @n 111 #@d @n		0x04
+USBFS_CAP_REAP_AFTER_DISCONNECT	61 @n 113 #@d @n		0x10
+USBFS_CAP_ZERO_PACKET	61 @n 109 #@d @n			0x01
+USBFS_DISCONNECT_CLAIM_EXCEPT_DRIVER	61 @n 116 #@d @n	0x02
+USBFS_DISCONNECT_CLAIM_IF_DRIVER	61 @n 115 #@d @n	0x01
+USBFS_MAXDRIVERNAME	61 @n 49 #@d @n		255
+USBFS_SPEED_FULL	61 @n 132 #@d @n			2
+USBFS_SPEED_HIGH	61 @n 133 #@d @n			3
+USBFS_SPEED_LOW	61 @n 131 #@d @n				1
+USBFS_SPEED_SUPER	61 @n 135 #@d @n			5
+USBFS_SPEED_SUPER_PLUS	61 @n 136 #@d @n			6
+USBFS_SPEED_UNKNOWN	61 @n 130 #@d @n			0
+USBFS_SPEED_WIRELESS	61 @n 134 #@d @n			4
+USBFS_URB_BULK_CONTINUATION	61 @n 58 #@d @n	0x04
+USBFS_URB_ISO_ASAP	61 @n 57 #@d @n		0x02
+USBFS_URB_QUEUE_BULK	61 @n 59 #@d @n		0x10
+USBFS_URB_SHORT_NOT_OK	61 @n 56 #@d @n		0x01
+USBFS_URB_TYPE_BULK	61 @n 65 #@d @n		3
+USBFS_URB_TYPE_CONTROL	61 @n 64 #@d @n		2
+USBFS_URB_TYPE_INTERRUPT	61 @n 63 #@d @n	1
+USBFS_URB_TYPE_ISO	61 @n 62 #@d @n		0
+USBFS_URB_ZERO_PACKET	61 @n 60 #@d @n		0x40
+USBI_CAP_HAS_HID_ACCESS	34 @n 141 #@d @n			0x00010000
+USBI_CAP_SUPPORTS_DETACH_KERNEL_DRIVER	34 @n 142 #@d @n	0x00020000
+USBI_EVENT_DEVICE_CLOSE	34 @n 464 	@n = 1U << 5,
+USBI_EVENT_EVENT_SOURCES_MODIFIED	34 @n 449 	@n = 1U << 0,
+USBI_EVENT_HOTPLUG_CB_DEREGISTERED	34 @n 455 	@n = 1U << 2,
+USBI_EVENT_HOTPLUG_MSG_PENDING	34 @n 458 	@n = 1U << 3,
+USBI_EVENT_OS_HANDLE	48 @n 30 #@d @n(e)	((e)->hEvent)
+USBI_EVENT_OS_HANDLE	44 @n 40 #@d @n(e)	((e)->pipefd[0])
+USBI_EVENT_OS_HANDLE	44 @n 33 #@d @n(e)	((e)->eventfd)
+USBI_EVENT_POLL_EVENTS	48 @n 31 #@d @n	0
+USBI_EVENT_POLL_EVENTS	44 @n 41 #@d @n	POLLIN
+USBI_EVENT_POLL_EVENTS	44 @n 34 #@d @n	POLLIN
+USBI_EVENT_TRANSFER_COMPLETED	34 @n 461 	@n = 1U << 4,
+USBI_EVENT_USER_INTERRUPT	34 @n 452 	@n = 1U << 1,
+USBI_HOTPLUG_DEVICE_ARRIVED	34 @n 697 	@n = LIBUSB_HOTPLUG_EVENT_DEVICE_ARRIVED,
+USBI_HOTPLUG_DEVICE_LEFT	34 @n 700 	@n = LIBUSB_HOTPLUG_EVENT_DEVICE_LEFT,
+USBI_HOTPLUG_DEV_CLASS_VALID	34 @n 713 	@n = (1U << 5),
+USBI_HOTPLUG_NEEDS_FREE	34 @n 716 	@n = (1U << 6),
+USBI_HOTPLUG_PRODUCT_ID_VALID	34 @n 710 	@n = (1U << 4),
+USBI_HOTPLUG_VENDOR_ID_VALID	34 @n 707 	@n = (1U << 3),
+USBI_INVALID_EVENT	48 @n 32 #@d @n	{ INVALID_HANDLE_VALUE }
+USBI_INVALID_EVENT	44 @n 42 #@d @n	{ { -1, -1 } }
+USBI_INVALID_EVENT	44 @n 35 #@d @n	{ -1 }
+USBI_LOG_LINE_END	34 @n 147 #@d @n	"\n"
+USBI_MAX_LOG_LEN	34 @n 145 #@d @n	1024
+USBI_MUTEX_INITIALIZER	54 @n 26 #@d @n	0L
+USBI_MUTEX_INITIALIZER	45 @n 28 #@d @n	PTHREAD_MUTEX_INITIALIZER
+USBI_OS_HANDLE_FORMAT_STRING	48 @n 25 #@d @n	"HANDLE %p"
+USBI_OS_HANDLE_FORMAT_STRING	44 @n 27 #@d @n	"fd %d"
+USBI_TIMER_OS_HANDLE	48 @n 38 #@d @n(t)	((t)->hTimer)
+USBI_TIMER_OS_HANDLE	44 @n 50 #@d @n(t)	((t)->timerfd)
+USBI_TIMER_POLL_EVENTS	48 @n 39 #@d @n	0
+USBI_TIMER_POLL_EVENTS	44 @n 51 #@d @n	POLLIN
+USBI_TRANSFER_CANCELLING	34 @n 584 	@n = 1U << 1,
+USBI_TRANSFER_DEVICE_DISAPPEARED	34 @n 587 	@n = 1U << 2,
+USBI_TRANSFER_IN_FLIGHT	34 @n 581 	@n = 1U << 0,
+USBI_TRANSFER_OS_HANDLES_TIMEOUT	34 @n 592 	@n = 1U << 0,
+USBI_TRANSFER_TIMED_OUT	34 @n 598 	@n = 1U << 2,
+USBI_TRANSFER_TIMEOUT_HANDLED	34 @n 595 	@n = 1U << 1,
+USBI_TRANSFER_TO_LIBUSB_TRANSFER	34 @n 601 #@d @n(itransfer)	\
+USBRoster	49 @n 344 @n::~@n()
+USBRoster	49 @n 338 @n::@n()
+USBTransfer	50 @n 42 @n::~@n()
+USBTransfer	50 @n 34 @n::@n(struct usbi_transfer *itransfer, USBDevice *device)
+USB_API_COMPOSITE	56 @n 61 #@d @n	2
+USB_API_HID	56 @n 63 #@d @n		4
+USB_API_HUB	56 @n 60 #@d @n		1
+USB_API_MAX	56 @n 64 #@d @n		5
+USB_API_UNSUPPORTED	56 @n 59 #@d @n	0
+USB_API_WINUSBX	56 @n 62 #@d @n		3
+USB_CONFIGURATION_DESCRIPTOR	57 @n 189 } @n, *P@n;
+USB_CONFIGURATION_DESCRIPTOR	57 @n 180 @t struct @n {
+USB_CONFIGURATION_DESCRIPTOR_SHORT	56 @n 354 } @n;
+USB_CONNECTION_STATUS	56 @n 292 } @n;
+USB_CTL_CODE	56 @n 265 #@d @n(id) \
+USB_DESCRIPTOR_REQUEST	56 @n 349 } @n, *P@n;
+USB_DESCRIPTOR_REQUEST_SIZE	56 @n 54 #@d @n	12U
+USB_DEVICE_DESCRIPTOR	57 @n 178 } @n, *P@n;
+USB_DEVICE_DESCRIPTOR	57 @n 163 @t struct @n {
+USB_DEVICE_SPEED	56 @n 300 } @n;
+USB_DEVTMPFS_PATH	63 @n 76 #@d @n	"/dev/bus/usb"
+USB_DK_CONFIG_DESCRIPTOR_REQUEST	73 @n 32 } @n, *P@n;
+USB_DK_CONFIG_DESCRIPTOR_REQUEST	73 @n 29 @t struct @n {
+USB_DK_DEVICE_ID	57 @n 198 } @n, *P@n;
+USB_DK_DEVICE_ID	57 @n 195 @t struct @n {
+USB_DK_DEVICE_INFO	57 @n 206 } @n, *P@n;
+USB_DK_DEVICE_INFO	57 @n 200 @t struct @n {
+USB_DK_DEVICE_SPEED	73 @n 46 } @n;
+USB_DK_GEN_TRANSFER_RESULT	57 @n 216 } @n, *P@n;
+USB_DK_GEN_TRANSFER_RESULT	57 @n 213 @t struct @n {
+USB_DK_ISO_TRANSFER_RESULT	57 @n 211 } @n, *P@n;
+USB_DK_ISO_TRANSFER_RESULT	57 @n 208 @t struct @n {
+USB_DK_TRANSFER_REQUEST	57 @n 231 } @n, *P@n;
+USB_DK_TRANSFER_REQUEST	57 @n 223 @t struct @n {
+USB_DK_TRANSFER_RESULT	57 @n 221 } @n, *P@n;
+USB_DK_TRANSFER_RESULT	57 @n 218 @t struct @n {
+USB_DK_TRANSFER_TYPE	73 @n 53 } @n;
+USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION	56 @n 261 #@d @n		260
+USB_GET_NODE_CONNECTION_INFORMATION_EX	56 @n 262 #@d @n		274
+USB_GET_NODE_CONNECTION_INFORMATION_EX_V2	56 @n 263 #@d @n	279
+USB_GET_NODE_INFORMATION	56 @n 260 #@d @n			258
+USB_HUB_DESCRIPTOR	56 @n 324 } @n, *P@n;
+USB_HUB_INFORMATION	56 @n 329 } @n, *P@n;
+USB_HUB_NODE	56 @n 305 } @n;
+USB_INTERFACE_DESCRIPTOR	56 @n 366 } @n, *P@n;
+USB_INTERFACE_DESCRIPTOR	56 @n 356 @t struct @n {
+USB_MAXCONFIG	34 @n 138 #@d @n		8
+USB_MAXENDPOINTS	34 @n 136 #@d @n	32
+USB_MAXINTERFACES	34 @n 137 #@d @n	32
+USB_NODE_CONNECTION_INFORMATION_EX	56 @n 378 } @n, *P@n;
+USB_NODE_CONNECTION_INFORMATION_EX_V2	56 @n 406 } @n, *P@n;
+USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS	56 @n 399 } @n, *P@n;
+USB_NODE_INFORMATION	56 @n 337 } @n, *P@n;
+USB_PROTOCOLS	56 @n 388 } @n, *P@n;
+USB_RQ	82 @n 145 #@d @n			0x04
+USEC_PER_SEC	34 @n 259 #@d @n	1000000L
+USE_GENERIC	85 @n 141 	@n,
+USE_HID	85 @n 145 	@n,
+USE_PS3	85 @n 142 	@n,
+USE_SCSI	85 @n 144 	@n,
+USE_SYSTEM_LOGGING_FACILITY	21 @n 52 #@d @n 1
+USE_XBOX	85 @n 143 	@n,
+UsbFullSpeed	56 @n 296 	@n,
+UsbHighSpeed	56 @n 297 	@n,
+UsbHub	56 @n 303 	@n,
+UsbLowSpeed	56 @n 295 	@n = 0,
+UsbMIParent	56 @n 304 	@n
+UsbSuperSpeed	56 @n 298 	@n,
+UsbSuperSpeedPlus	56 @n 299 	@n	// Not in Microsoft headers
+UsbdPipeTypeBulk	56 @n 438 	@n,
+UsbdPipeTypeControl	56 @n 436 	@n,
+UsbdPipeTypeInterrupt	56 @n 439 	@n
+UsbdPipeTypeIsochronous	56 @n 437 	@n,
+UsbiTransfer	50 @n 47 USBTransfer::@n()
+VALID_HOTPLUG_EVENTS	30 @n 145 #@d @n			\
+VALID_HOTPLUG_FLAGS	30 @n 149 #@d @n			\
+WINAPI_CHECK	54 @n 24 #@d @n(expression)	ASSERT_NE(expression, 0)
+WINDOWS_10	57 @n 155 	@n,
+WINDOWS_11_OR_LATER	57 @n 156 	@n
+WINDOWS_2000	57 @n 148 	@n,
+WINDOWS_2003	57 @n 150 	@n,	// Also XP x64
+WINDOWS_7	57 @n 152 	@n,
+WINDOWS_8	57 @n 153 	@n,
+WINDOWS_8_1	57 @n 154 	@n,
+WINDOWS_UNDEFINED	57 @n 147 	@n,
+WINDOWS_VISTA	57 @n 151 	@n,
+WINDOWS_XP	57 @n 149 	@n,
+WINUSB_INTERFACE_HANDLE	56 @n 462 @t PVOID @n, *P@n;
+WINUSB_ISOCH_BUFFER_HANDLE	56 @n 463 @t PVOID @n, *P@n;
+WINUSB_PIPE_INFORMATION_EX	56 @n 448 } @n, *P@n;
+WINUSB_SETUP_PACKET	56 @n 458 } @n, *P@n;
+WINUSB_ZLP	57 @n 270 enum @n {
+WINUSB_ZLP_OFF	57 @n 272 	@n = 1,
+WINUSB_ZLP_ON	57 @n 273 	@n = 2
+WINUSB_ZLP_UNSET	57 @n 271 	@n = 0,
+WRITE	46 @n 28 #@d	@n	1
+WatchedEntry	49 @n 20 class @n {
+WatchedEntry	49 @n 155 @n::~@n()
+WinUSB_Set	64 @n 2269 #@d @n(h, fn, required)										\
+ZERO_SIZED_ARRAY	37 @n 49 #@d @n	0	/* [0] - non-standard, but usually working code */
+ZERO_SIZED_ARRAY	37 @n 47 #@d @n		/* [] - valid C99 code */
+_	187 @n 87 #  @d @n(msgid)	(msgid)
+_	187 @n 84 #   @d @n(msgid)	gettext (msgid)
+_BSD_SOURCE	59 @n 35 # @d @n
+_GETOPT_H	188 @n 23 # @d @n 1
+_GNU_SOURCE	21 @n 55 #@d @n 1
+_GNU_SOURCE	11 @n 37 #@d @n 1
+_HIDD_ATTIRBUTES	56 @n 696 @t struct @n {
+_HIDP_CAPS	56 @n 706 @t struct @n {
+_HIDP_REPORT_TYPE	56 @n 725 @t enum @n {
+_HIDP_VALUE_CAPS	56 @n 731 @t struct @n {
+_KISO_CONTEXT	56 @n 630 @t struct @n {
+_KISO_FLAG	56 @n 624 @t enum @n {
+_KISO_PACKET	56 @n 618 @t struct @n {
+_KLIB_VERSION	56 @n 596 @t struct @n {
+_KUSB_FNID	56 @n 558 @t enum @n {
+_NO_PROTO	187 @n 27 # @d @n
+_TIMESPEC_DEFINED	95 @n 20 #@d @n 1
+_TIMESPEC_DEFINED	54 @n 62 #@d @n 1
+_USBD_ISO_PACKET_DESCRIPTOR	56 @n 429 @t struct @n {
+_USBD_PIPE_TYPE	56 @n 435 @t enum @n {
+_USB_CONFIGURATION_DESCRIPTOR_SHORT	56 @n 351 @t struct @n {
+_USB_CONNECTION_STATUS	56 @n 280 @t enum @n {
+_USB_DESCRIPTOR_REQUEST	56 @n 339 @t struct @n {
+_USB_DEVICE_SPEED	56 @n 294 @t enum @n {
+_USB_HUB_DESCRIPTOR	56 @n 316 @t struct @n {
+_USB_HUB_INFORMATION	56 @n 326 @t struct @n {
+_USB_HUB_NODE	56 @n 302 @t enum @n {
+_USB_NODE_CONNECTION_INFORMATION_EX	56 @n 368 @t struct @n {
+_USB_NODE_CONNECTION_INFORMATION_EX_V2	56 @n 401 @t struct @n {
+_USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS	56 @n 390 @t union @n {
+_USB_NODE_INFORMATION	56 @n 331 @t struct @n {
+_USB_PROTOCOLS	56 @n 380 @t union @n {
+_USB_RAW_H_	71 @n 7 #@d @n
+_WINUSB_SETUP_PACKET	56 @n 452 @t struct @n {
+__for_each_completed_transfer_safe	34 @n 1461 #@d @n(list, t, n) \
+__for_each_transfer	34 @n 1449 #@d @n(list, t) \
+__for_each_transfer_safe	34 @n 1455 #@d @n(list, t, n) \
+__func__	95 @n 15 #@d @n __FUNCTION__
+__has_builtin	55 @n 165   #@d @n(x) 0  // Compatibility with non-clang compilers.
+__need_getopt	188 @n 178 #undef @n
+_access_endpoint	68 @n 619 @n(struct libusb_transfer *transfer)
+_access_endpoint	52 @n 550 @n(struct libusb_transfer *transfer)
+_beginthreadex	57 @n 54 #@d @n(a, b, c, d, e, f) CreateThread(a, b, (LPTHREAD_START_ROUTINE)c, d, e, (LPDWORD)f)
+_bus_open	68 @n 693 @n(int number)
+_cache_active_config_descriptor	68 @n 504 @n(struct libusb_device *dev)
+_cache_active_config_descriptor	52 @n 467 @n(struct libusb_device *dev, int fd)
+_errno_to_libusb	68 @n 483 @n(int err)
+_errno_to_libusb	52 @n 445 @n(int err)
+_errno_to_libusb	65 @n 1462 @n(int err)
+_errno_to_libusb	50 @n 29 static int @n(int status)
+_getopt_initialize	187 @n 389 @n (argc, argv, optstring)
+_getopt_internal	187 @n 511 @n (argc, argv, optstring, longopts, longind, long_only)
+_hid_class_request	64 @n 3682 static int @n(struct libusb_device *dev, HANDLE hid_handle, int request_type,
+_hid_get_config_descriptor	64 @n 3317 static int @n(struct hid_device_priv *hid_priv, void *data, size_t *size)
+_hid_get_descriptor	64 @n 3527 static int @n(struct libusb_device *dev, HANDLE hid_handle, int recipient,
+_hid_get_device_descriptor	64 @n 3291 static int @n(struct hid_device_priv *hid_priv, void *data, size_t *size)
+_hid_get_hid_descriptor	64 @n 3437 static int @n(struct hid_device_priv *hid_priv, void *data, size_t *size)
+_hid_get_report	64 @n 3566 static int @n(struct libusb_device *dev, HANDLE hid_handle, int id, void *data,
+_hid_get_report_descriptor	64 @n 3460 static int @n(struct hid_device_priv *hid_priv, void *data, size_t *size)
+_hid_get_string_descriptor	64 @n 3392 static int @n(struct hid_device_priv *hid_priv, int _index,
+_hid_set_report	64 @n 3618 static int @n(struct libusb_device *dev, HANDLE hid_handle, int id, void *data,
+_hid_wcslen	64 @n 3281 static int @n(WCHAR *str)
+_strdup	57 @n 52 #@d @n strdup
+_stricmp	86 @n 41 #@d @n strcasecmp
+_stricmp	57 @n 51 #@d @n strcasecmp
+_sync_control_transfer	68 @n 557 @n(struct usbi_transfer *itransfer)
+_sync_control_transfer	52 @n 508 @n(struct usbi_transfer *itransfer)
+_sync_gen_transfer	68 @n 652 @n(struct usbi_transfer *itransfer)
+_sync_gen_transfer	52 @n 584 @n(struct usbi_transfer *itransfer)
+_undef	87 @n 491 	@n = 0,
+_usbi_log	34 @n 315 #@d @n(ctx, level, ...) usbi_log(ctx, level, __func__, __VA_ARGS__)
+add_to_flying_list	31 @n 1396 static int @n(struct usbi_transfer *itransfer)
+aio_callback_args	46 @n 74 struct @n{
+alloc_root_hub_config_desc	64 @n 846 static int @n(struct libusb_device *dev, ULONG num_ports,
+alloc_transfers	82 @n 547 static int @n(void)
+args	57 @n 96 	@t ret (api * DLL_FUNC_NAME(name))@n;			\
+arm_timer_for_next_timeout	31 @n 1386 static inline int @n(struct libusb_context *ctx)
+arm_timer_for_next_timeout	31 @n 1360 static int @n(struct libusb_context *ctx)
+auto_claim	64 @n 593 static int @n(struct libusb_transfer *transfer, int *interface_number, int api_type)
+auto_release	64 @n 638 static void @n(struct usbi_transfer *itransfer)
+be_to_int32	85 @n 69 #@d @n(buf) (((buf)[0]<<24)|((buf)[1]<<16)|((buf)[2]<<8)|(buf)[3])
+benchmark_in	83 @n 115 static int @n(uint8_t ep)
+cache_config_descriptors	64 @n 709 static void @n(struct libusb_device *dev, HANDLE hub_handle)
+calculate_timeout	31 @n 1241 static void @n(struct usbi_transfer *itransfer)
+cancel_control_transfer	70 @n 2140 static int @n(struct usbi_transfer *itransfer) {
+cb_img	82 @n 468 static void LIBUSB_CALL @n(struct libusb_transfer *transfer)
+cb_irq	82 @n 429 static void LIBUSB_CALL @n(struct libusb_transfer *transfer)
+cb_mode_changed	82 @n 301 static void LIBUSB_CALL @n(struct libusb_transfer *transfer)
+cb_xfr	83 @n 73 static void LIBUSB_CALL @n(struct libusb_transfer *xfr)
+check_valid_interface	64 @n 2721 static int @n(struct libusb_device_handle *dev_handle, unsigned short interface, int api_id)
+claim_interface	63 @n 1488 static int @n(struct libusb_device_handle *handle, unsigned int iface)
+cleanup_removed_event_sources	31 @n 1211 static void @n(struct libusb_context *ctx)
+clear_configuration	33 @n 334 static void @n(struct libusb_config_descriptor *config)
+clear_endpoint	33 @n 78 static void @n(struct libusb_endpoint_descriptor *endpoint)
+clear_interface	33 @n 166 static void @n(struct libusb_interface *usb_interface)
+command_block_wrapper	85 @n 102 struct @n {
+command_status_wrapper	85 @n 113 struct @n {
+composite_cancel_transfer	64 @n 4472 static int @n(int sub_api, struct usbi_transfer *itransfer)
+composite_claim_interface	64 @n 4311 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+composite_clear_halt	64 @n 4452 static int @n(int sub_api, struct libusb_device_handle *dev_handle, unsigned char endpoint)
+composite_close	64 @n 4276 static void @n(int sub_api, struct libusb_device_handle *dev_handle)
+composite_copy_transfer_data	64 @n 4520 static enum libusb_transfer_status @n(int sub_api, struct usbi_transfer *itransfer, DWORD length)
+composite_open	64 @n 4227 static int @n(int sub_api, struct libusb_device_handle *dev_handle)
+composite_release_interface	64 @n 4333 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+composite_reset_device	64 @n 4492 static int @n(int sub_api, struct libusb_device_handle *dev_handle)
+composite_set_interface_altsetting	64 @n 4322 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting)
+composite_submit_bulk_transfer	64 @n 4410 static int @n(int sub_api, struct usbi_transfer *itransfer)
+composite_submit_control_transfer	64 @n 4344 static int @n(int sub_api, struct usbi_transfer *itransfer)
+composite_submit_iso_transfer	64 @n 4431 static int @n(int sub_api, struct usbi_transfer *itransfer)
+config_descriptor	63 @n 117 struct @n {
+container_of	34 @n 55 #@d @n(ptr, type, member) \
+darwin_abort_transfers	70 @n 2155 static int @n (struct usbi_transfer *itransfer) {
+darwin_alloc_streams	70 @n 2320 static int @n (struct libusb_device_handle *dev_handle, uint32_t num_streams, unsigned char *endpoints,
+darwin_async_io_callback	70 @n 2207 static void @n (void *refcon, IOReturn result, void *arg0) {
+darwin_attach_kernel_driver	70 @n 2474 static int @n (struct libusb_device_handle *dev_handle, uint8_t interface) {
+darwin_cache_device_descriptor	70 @n 816 static enum libusb_error @n (struct libusb_context *ctx, struct darwin_cached_device *dev) {
+darwin_cached_device	55 @n 177 struct @n {
+darwin_cancel_transfer	70 @n 2191 static int @n(struct usbi_transfer *itransfer) {
+darwin_capture_claim_interface	70 @n 2494 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface) {
+darwin_capture_release_interface	70 @n 2506 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface) {
+darwin_check_configuration	70 @n 730 static enum libusb_error @n (struct libusb_context *ctx, struct darwin_cached_device *dev) {
+darwin_claim_interface	70 @n 1439 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface) {
+darwin_cleanup_devices	70 @n 574 static void @n(void) {
+darwin_clear_halt	70 @n 1633 static int @n(struct libusb_device_handle *dev_handle, unsigned char endpoint) {
+darwin_clear_iterator	70 @n 442 static void @n (io_iterator_t iter) {
+darwin_close	70 @n 1260 static void @n (struct libusb_device_handle *dev_handle) {
+darwin_deref_cached_device	70 @n 165 static void @n(struct darwin_cached_device *cached_dev) {
+darwin_destroy_device	70 @n 1863 static void @n(struct libusb_device *dev) {
+darwin_detach_kernel_driver	70 @n 2427 static int @n (struct libusb_device_handle *dev_handle, uint8_t interface) {
+darwin_device_from_service	70 @n 292 static usb_device_t **@n (struct libusb_context *ctx, io_service_t service)
+darwin_device_handle_priv	55 @n 199 struct @n {
+darwin_device_priv	55 @n 195 struct @n {
+darwin_devices_attached	70 @n 330 static void @n (void *ptr, io_iterator_t add_devices) {
+darwin_devices_detached	70 @n 362 static void @n (void *ptr, io_iterator_t rem_devices) {
+darwin_error_str	70 @n 96 static const char *@n (IOReturn result) {
+darwin_event_thread_main	70 @n 457 static void *@n (void *arg0) {
+darwin_exit	70 @n 645 static void @n (struct libusb_context *ctx) {
+darwin_fail_startup	70 @n 449 static void @n(void) {
+darwin_free_streams	70 @n 2355 static int @n (struct libusb_device_handle *dev_handle, unsigned char *endpoints, int num_endpoints) {
+darwin_get_active_config_descriptor	70 @n 689 static int @n(struct libusb_device *dev, void *buffer, size_t len) {
+darwin_get_cached_device	70 @n 983 static enum libusb_error @n(struct libusb_context *ctx, io_service_t service, struct darwin_cached_device **cached_out,
+darwin_get_config_descriptor	70 @n 704 static int @n(struct libusb_device *dev, uint8_t config_index, void *buffer, size_t len) {
+darwin_get_configuration	70 @n 1304 static int @n(struct libusb_device_handle *dev_handle, uint8_t *config) {
+darwin_get_interface	70 @n 1340 static IOReturn @n (usb_device_t **darwin_device, uint8_t ifc, io_service_t *usbInterfacep) {
+darwin_handle_transfer_completion	70 @n 2259 static int @n (struct usbi_transfer *itransfer) {
+darwin_has_capture_entitlements	70 @n 2390 static bool @n (void) {
+darwin_hotplug_poll	70 @n 431 static void @n (void)
+darwin_init	70 @n 582 static int @n(struct libusb_context *ctx) {
+darwin_interface	55 @n 203   struct @n {
+darwin_kernel_driver_active	70 @n 1837 static int @n(struct libusb_device_handle *dev_handle, uint8_t interface) {
+darwin_open	70 @n 1211 static int @n (struct libusb_device_handle *dev_handle) {
+darwin_reenumerate_device	70 @n 1716 static int @n (struct libusb_device_handle *dev_handle, bool capture) {
+darwin_ref_cached_device	70 @n 180 static void @n(struct darwin_cached_device *cached_dev) {
+darwin_release_interface	70 @n 1546 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface) {
+darwin_reload_device	70 @n 2408 static int @n (struct libusb_device_handle *dev_handle) {
+darwin_request_descriptor	70 @n 796 static IOReturn @n (usb_device_t **device, UInt8 desc, UInt8 desc_index, void *buffer, size_t buffer_size) {
+darwin_reset_device	70 @n 1805 static int @n (struct libusb_device_handle *dev_handle) {
+darwin_restore_state	70 @n 1654 static int @n (struct libusb_device_handle *dev_handle, int8_t active_config,
+darwin_scan_devices	70 @n 1183 static enum libusb_error @n(struct libusb_context *ctx) {
+darwin_set_configuration	70 @n 1312 static enum libusb_error @n(struct libusb_device_handle *dev_handle, int config) {
+darwin_set_interface_altsetting	70 @n 1579 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting) {
+darwin_submit_transfer	70 @n 2116 static int @n(struct usbi_transfer *itransfer) {
+darwin_to_libusb	70 @n 138 static enum libusb_error @n (IOReturn result) {
+darwin_transfer_priv	55 @n 212 struct @n {
+darwin_transfer_status	70 @n 2231 static enum libusb_transfer_status @n (struct usbi_transfer *itransfer, IOReturn result) {
+detach_kernel_driver_and_claim	63 @n 1784 static int @n(struct libusb_device_handle *handle,
+dev_has_config0	63 @n 168 static int @n(struct libusb_device *dev)
+device_priv	68 @n 35 struct @n {
+device_priv	52 @n 35 struct @n {
+devlink_cbarg	46 @n 61 struct @n {
+discard_urbs	63 @n 1852 static int @n(struct usbi_transfer *itransfer, int first, int last_plus_one)
+discovered_devs	34 @n 873 struct @n {
+discovered_devs_alloc	39 @n 640 static struct discovered_devs *@n(void)
+discovered_devs_append	39 @n 664 struct discovered_devs *@n(
+discovered_devs_free	39 @n 652 static void @n(struct discovered_devs *discdevs)
+display_buffer_hex	85 @n 149 static void @n(unsigned char *buffer, unsigned size)
+display_ps3_status	85 @n 190 static int @n(libusb_device_handle *handle)
+display_xbox_status	85 @n 280 static int @n(libusb_device_handle *handle)
+do_close	39 @n 1383 static void @n(struct libusb_context *ctx,
+do_init	82 @n 513 static int @n(void)
+do_streams_ioctl	63 @n 1621 static int @n(struct libusb_device_handle *handle, long req,
+do_sync_bulk_transfer	38 @n 169 static int @n(struct libusb_device_handle *dev_handle,
+do_sync_intr	82 @n 339 static int @n(unsigned char *data)
+driver_lookup	56 @n 216 struct @n {
+endpoint	46 @n 37 @t	struct @n {
+enumerate_hcd_root_hub	64 @n 1267 static int @n(struct libusb_context *ctx, const char *dev_id,
+ep_to_pipeRef	70 @n 184 static int @n(struct libusb_device_handle *dev_handle, uint8_t ep, uint8_t *pipep, uint8_t *ifcp, struct darwin_interface **interface_out) {
+exchange	187 @n 304 @n (argv)
+exit_dlls	64 @n 200 static void @n(void)
+ezusb_H	84 @n 2 #@d @n
+ezusb_cpucs	87 @n 172 static bool @n(libusb_device_handle *device, uint32_t addr, bool doRun)
+ezusb_fx3_jump	87 @n 201 static bool @n(libusb_device_handle *device, uint32_t addr)
+ezusb_load_ram	87 @n 718 int @n(libusb_device_handle *device, const char *path, int fx_type, int img_type, int stage)
+ezusb_read	87 @n 148 static int @n(libusb_device_handle *device, const char *label,
+ezusb_write	87 @n 125 static int @n(libusb_device_handle *device, const char *label,
+fInitCheck	50 @n 338 	@n(false)
+fInitCheck	50 @n 228 	@n(false)
+fInitCheck	49 @n 60 		@n(false)
+fInitCheck	49 @n 255 		@n(false)
+find_dpfp_device	82 @n 217 static int @n(void)
+find_endpoint	39 @n 1010 static const struct libusb_endpoint_descriptor *@n(
+find_usbfs_path	63 @n 249 static const char *@n(void)
+for_each_context	34 @n 1437 #@d @n(c) \
+for_each_device	34 @n 1440 #@d @n(ctx, d) \
+for_each_device_safe	34 @n 1443 #@d @n(ctx, d, n) \
+for_each_event_source	34 @n 1464 #@d @n(ctx, e) \
+for_each_helper	34 @n 187 #@d @n(pos, head, type) \
+for_each_hotplug_cb	34 @n 1473 #@d @n(ctx, c) \
+for_each_hotplug_cb_safe	34 @n 1476 #@d @n(ctx, c, n) \
+for_each_open_device	34 @n 1446 #@d @n(ctx, h) \
+for_each_removed_event_source	34 @n 1467 #@d @n(ctx, e) \
+for_each_removed_event_source_safe	34 @n 1470 #@d @n(ctx, e, n) \
+for_each_safe_helper	34 @n 190 #@d @n(pos, n, head, type) \
+for_each_transfer	34 @n 1452 #@d @n(ctx, t) \
+for_each_transfer_safe	34 @n 1458 #@d @n(ctx, t, n) \
+free_iso_urbs	63 @n 1886 static void @n(struct linux_transfer_priv *tpriv)
+fx2_is_external	87 @n 75 static bool @n(uint32_t addr, size_t len)
+fx2lp_is_external	87 @n 94 static bool @n(uint32_t addr, size_t len)
+fx3_load_ram	87 @n 566 static int @n(libusb_device_handle *device, const char *path)
+fx_is_external	87 @n 56 static bool @n(uint32_t addr, size_t len)
+fx_known_device	84 @n 58 } @n;
+get_active_config_descriptor	33 @n 480 static int @n(struct libusb_device *dev,
+get_ancestor	64 @n 442 static struct libusb_device *@n(struct libusb_context *ctx,
+get_api_type	64 @n 1304 static void @n(HDEVINFO *dev_info, SP_DEVINFO_DATA *dev_info_data,
+get_config_descriptor	33 @n 500 static int @n(struct libusb_device *dev, uint8_t config_idx,
+get_configuration_index	70 @n 667 static int @n (struct libusb_device *dev, UInt8 config_value) {
+get_dev_port_number	64 @n 1226 static bool @n(HDEVINFO dev_info, SP_DEVINFO_DATA *dev_info_data, DWORD *port_nr)
+get_device_parent_sessionID	70 @n 966 static bool @n(io_service_t service, UInt64 *parent_sessionID) {
+get_device_port	70 @n 947 static bool @n (io_service_t service, UInt8 *port) {
+get_devinfo_data	64 @n 220 static bool @n(struct libusb_context *ctx,
+get_endpoints	70 @n 1377 static enum libusb_error @n (struct libusb_device_handle *dev_handle, uint8_t iface) {
+get_env_debug_level	39 @n 2246 static enum libusb_log_level @n(void)
+get_hid_record_size	85 @n 555 static int @n(uint8_t *hid_report_descriptor, int size, int type)
+get_hwstat	82 @n 247 static int @n(unsigned char *status)
+get_interface_by_endpoint	64 @n 464 static int @n(struct libusb_config_descriptor *conf_desc, uint8_t ep)
+get_interface_details	64 @n 258 static int @n(struct libusb_context *ctx, HDEVINFO dev_info,
+get_interface_details_filter	64 @n 337 static int @n(struct libusb_context *ctx, HDEVINFO *dev_info,
+get_ioregistry_value_data	70 @n 271 static bool @n (io_service_t service, CFStringRef property, ssize_t size, void *p) {
+get_ioregistry_value_number	70 @n 255 static bool @n (io_service_t service, CFStringRef property, CFNumberType type, void *p) {
+get_kernel_version	63 @n 306 static int @n(struct libusb_context *ctx,
+get_mass_storage_status	85 @n 372 static int @n(libusb_device_handle *handle, uint8_t endpoint, uint32_t expected_tag)
+get_next_timeout	31 @n 2266 static int @n(libusb_context *ctx, struct timeval *tv,
+get_sense	85 @n 419 static void @n(libusb_device_handle *handle, uint8_t endpoint_in, uint8_t endpoint_out)
+get_sub_api	64 @n 561 static int @n(char *driver, int api)
+get_timestamp	83 @n 47 static void @n(struct timeval *tv)
+get_transfer_priv_overlapped	57 @n 379 static inline OVERLAPPED *@n(struct usbi_transfer *itransfer)
+get_usbdk_device_handle_priv	57 @n 367 static inline struct usbdk_device_handle_priv *@n(struct libusb_device_handle *dev_handle)
+get_usbdk_proc_addr	60 @n 63 static FARPROC @n(struct libusb_context *ctx, LPCSTR api_name)
+get_usbdk_transfer_priv	57 @n 391 static inline struct usbdk_transfer_priv *@n(struct usbi_transfer *itransfer)
+get_usbfs_fd	63 @n 183 static int @n(struct libusb_device *dev, mode_t mode, int silent)
+get_valid_interface	64 @n 2697 static int @n(struct libusb_device_handle *dev_handle, int api_id)
+get_windows_version	58 @n 325 static enum windows_version @n(void)
+get_winusb_device_handle_priv	57 @n 373 static inline struct winusb_device_handle_priv *@n(struct libusb_device_handle *dev_handle)
+get_winusb_transfer_priv	57 @n 397 static inline struct winusb_transfer_priv *@n(struct usbi_transfer *itransfer)
+getopt	187 @n 977 @n (argc, argv, optstring)
+getopt_long	189 @n 67 @n (argc, argv, options, long_options, opt_index)
+getopt_long_only	189 @n 83 @n (argc, argv, options, long_options, opt_index)
+guid_to_string	64 @n 107 static const char *@n(const GUID *guid, char guid_string[MAX_GUID_STRING_LENGTH])
+haiku_cancel_transfer	62 @n 148 @n(struct usbi_transfer *itransfer)
+haiku_claim_interface	62 @n 111 @n(struct libusb_device_handle *dev_handle, uint8_t interface_number)
+haiku_clear_halt	62 @n 125 @n(struct libusb_device_handle *dev_handle, unsigned char endpoint)
+haiku_close	62 @n 68 @n(struct libusb_device_handle *dev_handle)
+haiku_exit	62 @n 45 @n(struct libusb_context *ctx)
+haiku_get_active_config_descriptor	62 @n 79 @n(struct libusb_device *device, void *buffer, size_t len)
+haiku_get_config_descriptor	62 @n 86 @n(struct libusb_device *device, uint8_t config_index, void *buffer, size_t len)
+haiku_handle_transfer_completion	62 @n 156 @n(struct usbi_transfer *itransfer)
+haiku_init	62 @n 36 @n(struct libusb_context *ctx)
+haiku_open	62 @n 53 @n(struct libusb_device_handle *dev_handle)
+haiku_release_interface	62 @n 132 @n(struct libusb_device_handle *dev_handle, uint8_t interface_number)
+haiku_set_altsetting	62 @n 118 @n(struct libusb_device_handle *dev_handle, uint8_t interface_number, uint8_t altsetting)
+haiku_set_configuration	62 @n 102 @n(struct libusb_device_handle *dev_handle, int config)
+haiku_submit_transfer	62 @n 140 @n(struct usbi_transfer *itransfer)
+handle_bulk_completion	63 @n 2335 static int @n(struct usbi_transfer *itransfer,
+handle_control_completion	63 @n 2592 static int @n(struct usbi_transfer *itransfer,
+handle_event_trigger	31 @n 2072 static int @n(struct libusb_context *ctx)
+handle_events	31 @n 2174 static int @n(struct libusb_context *ctx, struct timeval *tv)
+handle_iso_completion	63 @n 2472 static int @n(struct usbi_transfer *itransfer,
+handle_priv	68 @n 42 struct @n {
+handle_priv	52 @n 42 struct @n {
+handle_timeout	31 @n 2016 static void @n(struct usbi_transfer *itransfer)
+handle_timeouts	31 @n 2064 static void @n(struct libusb_context *ctx)
+handle_timeouts_locked	31 @n 2031 static void @n(struct libusb_context *ctx)
+handle_timer_trigger	31 @n 2154 static int @n(struct libusb_context *ctx)
+hid_claim_interface	64 @n 3907 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+hid_clear_halt	64 @n 4157 static int @n(int sub_api, struct libusb_device_handle *dev_handle, unsigned char endpoint)
+hid_close	64 @n 3886 static void @n(int sub_api, struct libusb_device_handle *dev_handle)
+hid_copy_transfer_data	64 @n 4188 static enum libusb_transfer_status @n(int sub_api, struct usbi_transfer *itransfer, DWORD length)
+hid_device_priv	56 @n 163 struct @n {
+hid_exit	64 @n 3728 static void @n(void)
+hid_init	64 @n 3707 static bool @n(struct libusb_context *ctx)
+hid_open	64 @n 3736 static int @n(int sub_api, struct libusb_device_handle *dev_handle)
+hid_release_interface	64 @n 3931 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+hid_reset_device	64 @n 4138 static int @n(int sub_api, struct libusb_device_handle *dev_handle)
+hid_set_interface_altsetting	64 @n 3950 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting)
+hid_submit_bulk_transfer	64 @n 4064 static int @n(int sub_api, struct usbi_transfer *itransfer)
+hid_submit_control_transfer	64 @n 3965 static int @n(int sub_api, struct usbi_transfer *itransfer)
+hotplug_callback	79 @n 29 static int LIBUSB_CALL @n(libusb_context *ctx, libusb_device *dev, libusb_hotplug_event event, void *user_data)
+hotplug_callback_detach	79 @n 61 static int LIBUSB_CALL @n(libusb_context *ctx, libusb_device *dev, libusb_hotplug_event event, void *user_data)
+htab_create	58 @n 145 static bool @n(struct libusb_context *ctx)
+htab_destroy	58 @n 169 static void @n(void)
+htab_entry	58 @n 135 } @n;
+htab_entry	58 @n 132 @t struct @n {
+htab_hash	58 @n 192 unsigned long @n(const char *str)
+init_capture	82 @n 491 static int @n(void)
+init_device	64 @n 1044 static int @n(struct libusb_device *dev, struct libusb_device *parent_dev,
+init_dlls	64 @n 175 static bool @n(struct libusb_context *ctx)
+init_root_hub	64 @n 879 static int @n(struct libusb_device *dev)
+initialize_device	63 @n 902 static int @n(struct libusb_device *dev, uint8_t busnum,
+initialize_handle	63 @n 1322 static int @n(struct libusb_device_handle *handle, int fd)
+interface	37 @n 60 #undef @n
+interface_by_endpoint	64 @n 2746 static int @n(struct winusb_device_priv *priv,
+internal_only	87 @n 492 	@n,		/* hardware first-stage loader */
+io_cf_plugin_ref_t	55 @n 173 @t IOCFPlugInInterface *@n;
+io_notification_port_t	55 @n 174 @t IONotificationPortRef @n;
+is_usbdev_entry	63 @n 230 static int @n(const char *name, uint8_t *bus_p, uint8_t *dev_p)
+is_x64	58 @n 311 static BOOL @n(void)
+kIOUSBHostInterfaceClassName	55 @n 152 #@d @n "IOUSBHostInterface"
+kUSBHostMatchingPropertyInterfaceNumber	55 @n 156 #@d @n "bInterfaceNumber"
+kernel_version	63 @n 111 struct @n {
+kernel_version_ge	63 @n 331 static int @n(const struct kernel_version *ver,
+libusbK_Set	64 @n 2278 #@d @n(sub_api, fn, required)								\
+libusb_alloc_streams	39 @n 1852 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_alloc_transfer	31 @n 1285 struct libusb_transfer * LIBUSB_CALL @n(
+libusb_attach_kernel_driver	39 @n 2045 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_bos_descriptor	37 @n 791 struct @n {
+libusb_bos_dev_capability_descriptor	37 @n 770 struct @n {
+libusb_bos_type	37 @n 509 enum @n {
+libusb_bulk_transfer	38 @n 274 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_cancel_transfer	31 @n 1579 int API_EXPORTED @n(struct libusb_transfer *transfer)
+libusb_capability	37 @n 1288 enum @n {
+libusb_claim_interface	39 @n 1659 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_class_code	37 @n 181 enum @n {
+libusb_clear_halt	39 @n 1790 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_close	39 @n 1448 void API_EXPORTED @n(libusb_device_handle *dev_handle)
+libusb_config_descriptor	37 @n 693 struct @n {
+libusb_container_id_descriptor	37 @n 884 struct @n {
+libusb_context	37 @n 987 @t struct @n @n;
+libusb_context	34 @n 342 struct @n {
+libusb_control_setup	37 @n 910 struct @n {
+libusb_control_transfer	38 @n 97 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_control_transfer_get_setup	37 @n 1496 static inline struct libusb_control_setup *@n(
+libusb_cpu_to_le16	37 @n 156 static inline uint16_t @n(const uint16_t x)
+libusb_descriptor_type	37 @n 246 enum @n {
+libusb_detach_kernel_driver	39 @n 2009 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_dev_mem_alloc	39 @n 1925 unsigned char * LIBUSB_CALL @n(libusb_device_handle *dev_handle,
+libusb_dev_mem_free	39 @n 1945 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_device	37 @n 1004 @t struct @n @n;
+libusb_device	34 @n 483 struct @n {
+libusb_device_descriptor	37 @n 528 struct @n {
+libusb_device_handle	37 @n 1015 @t struct @n @n;
+libusb_device_handle	34 @n 501 struct @n {
+libusb_endpoint_descriptor	37 @n 582 struct @n {
+libusb_endpoint_direction	37 @n 317 enum @n {
+libusb_endpoint_transfer_type	37 @n 331 enum @n {
+libusb_error	37 @n 1047 enum @n {
+libusb_error_name	39 @n 2675 DEFAULT_VISIBILITY const char * LIBUSB_CALL @n(int error_code)
+libusb_event_handler_active	31 @n 1887 int API_EXPORTED @n(libusb_context *ctx)
+libusb_event_handling_ok	31 @n 1858 int API_EXPORTED @n(libusb_context *ctx)
+libusb_exit	39 @n 2390 void API_EXPORTED @n(libusb_context *ctx)
+libusb_fill_bulk_stream_transfer	37 @n 1636 static inline void @n(
+libusb_fill_bulk_transfer	37 @n 1605 static inline void @n(struct libusb_transfer *transfer,
+libusb_fill_control_setup	37 @n 1525 static inline void @n(unsigned char *buffer,
+libusb_fill_control_transfer	37 @n 1574 static inline void @n(
+libusb_fill_interrupt_transfer	37 @n 1661 static inline void @n(
+libusb_fill_iso_transfer	37 @n 1690 static inline void @n(struct libusb_transfer *transfer,
+libusb_free_bos_descriptor	33 @n 896 void API_EXPORTED @n(struct libusb_bos_descriptor *bos)
+libusb_free_config_descriptor	33 @n 682 void API_EXPORTED @n(
+libusb_free_container_id_descriptor	33 @n 1067 void API_EXPORTED @n(
+libusb_free_device_list	39 @n 882 void API_EXPORTED @n(libusb_device **list,
+libusb_free_pollfds	31 @n 2767 void API_EXPORTED @n(const struct libusb_pollfd **pollfds)
+libusb_free_ss_endpoint_companion_descriptor	33 @n 754 void API_EXPORTED @n(
+libusb_free_ss_usb_device_capability_descriptor	33 @n 1013 void API_EXPORTED @n(
+libusb_free_streams	39 @n 1882 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_free_transfer	31 @n 1332 void API_EXPORTED @n(struct libusb_transfer *transfer)
+libusb_free_usb_2_0_extension_descriptor	33 @n 957 void API_EXPORTED @n(
+libusb_get_active_config_descriptor	33 @n 555 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_bos_descriptor	33 @n 846 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_get_bus_number	39 @n 903 uint8_t API_EXPORTED @n(libusb_device *dev)
+libusb_get_config_descriptor	33 @n 596 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_config_descriptor_by_value	33 @n 642 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_configuration	39 @n 1535 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_get_container_id_descriptor	33 @n 1032 int API_EXPORTED @n(libusb_context *ctx,
+libusb_get_descriptor	37 @n 1825 static inline int @n(libusb_device_handle *dev_handle,
+libusb_get_device	39 @n 1510 libusb_device * LIBUSB_CALL @n(libusb_device_handle *dev_handle)
+libusb_get_device_address	39 @n 994 uint8_t API_EXPORTED @n(libusb_device *dev)
+libusb_get_device_descriptor	33 @n 531 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_device_list	39 @n 812 ssize_t API_EXPORTED @n(libusb_context *ctx,
+libusb_get_device_speed	39 @n 1005 int API_EXPORTED @n(libusb_device *dev)
+libusb_get_iso_packet_buffer	37 @n 1739 static inline unsigned char *@n(
+libusb_get_iso_packet_buffer_simple	37 @n 1781 static inline unsigned char *@n(
+libusb_get_max_iso_packet_size	39 @n 1106 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_max_packet_size	39 @n 1051 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_next_timeout	31 @n 2539 int API_EXPORTED @n(libusb_context *ctx,
+libusb_get_parent	39 @n 984 libusb_device * LIBUSB_CALL @n(libusb_device *dev)
+libusb_get_pollfds	31 @n 2719 const struct libusb_pollfd ** LIBUSB_CALL @n(
+libusb_get_port_number	39 @n 922 uint8_t API_EXPORTED @n(libusb_device *dev)
+libusb_get_port_numbers	39 @n 938 int API_EXPORTED @n(libusb_device *dev,
+libusb_get_port_path	39 @n 964 int API_EXPORTED @n(libusb_context *ctx, libusb_device *dev,
+libusb_get_ss_endpoint_companion_descriptor	33 @n 705 int API_EXPORTED @n(
+libusb_get_ss_usb_device_capability_descriptor	33 @n 976 int API_EXPORTED @n(
+libusb_get_string_descriptor	37 @n 1847 static inline int @n(libusb_device_handle *dev_handle,
+libusb_get_string_descriptor_ascii	33 @n 1085 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_get_usb_2_0_extension_descriptor	33 @n 921 int API_EXPORTED @n(
+libusb_get_version	39 @n 2730 const struct libusb_version * LIBUSB_CALL @n(void)
+libusb_handle_events	31 @n 2407 int API_EXPORTED @n(libusb_context *ctx)
+libusb_handle_events_completed	31 @n 2429 int API_EXPORTED @n(libusb_context *ctx,
+libusb_handle_events_locked	31 @n 2457 int API_EXPORTED @n(libusb_context *ctx,
+libusb_handle_events_timeout	31 @n 2387 int API_EXPORTED @n(libusb_context *ctx,
+libusb_handle_events_timeout_completed	31 @n 2315 int API_EXPORTED @n(libusb_context *ctx,
+libusb_has_capability	39 @n 2459 int API_EXPORTED @n(uint32_t capability)
+libusb_hid_descriptor	56 @n 116 struct @n {
+libusb_hid_report_type	56 @n 157 enum @n {
+libusb_hid_request_type	56 @n 148 enum @n {
+libusb_hotplug_callback_handle	37 @n 1939 @t int @n;
+libusb_hotplug_deregister_callback	30 @n 404 void API_EXPORTED @n(libusb_context *ctx,
+libusb_hotplug_event	37 @n 1954 } @n;
+libusb_hotplug_flag	37 @n 1964 } @n;
+libusb_hotplug_get_user_data	30 @n 442 void * LIBUSB_CALL @n(libusb_context *ctx,
+libusb_hotplug_register_callback	30 @n 320 int API_EXPORTED @n(libusb_context *ctx,
+libusb_init	39 @n 2274 int API_EXPORTED @n(libusb_context **ctx)
+libusb_interface	37 @n 678 struct @n {
+libusb_interface_descriptor	37 @n 630 struct @n {
+libusb_interrupt_event_handler	31 @n 1916 void API_EXPORTED @n(libusb_context *ctx)
+libusb_interrupt_transfer	38 @n 328 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_iso_packet_descriptor	37 @n 1192 struct @n {
+libusb_iso_sync_type	37 @n 436 enum @n {
+libusb_iso_usage_type	37 @n 457 enum @n {
+libusb_kernel_driver_active	39 @n 1971 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_le16_to_cpu	37 @n 175 #@d @n libusb_cpu_to_le16
+libusb_lock_event_waiters	31 @n 1952 void API_EXPORTED @n(libusb_context *ctx)
+libusb_lock_events	31 @n 1808 void API_EXPORTED @n(libusb_context *ctx)
+libusb_log_cb_mode	37 @n 1333 enum @n {
+libusb_log_level	37 @n 1309 enum @n {
+libusb_open	39 @n 1293 int API_EXPORTED @n(libusb_device *dev,
+libusb_open_device_with_vid_pid	39 @n 1348 libusb_device_handle * LIBUSB_CALL @n(
+libusb_option	37 @n 2068 enum @n {
+libusb_pollfd	37 @n 1885 struct @n {
+libusb_pollfds_handle_timeouts	31 @n 2505 int API_EXPORTED @n(libusb_context *ctx)
+libusb_ref_device	39 @n 1161 libusb_device * LIBUSB_CALL @n(libusb_device *dev)
+libusb_release_interface	39 @n 1703 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_request_recipient	37 @n 415 enum @n {
+libusb_request_type	37 @n 397 enum @n {
+libusb_reset_device	39 @n 1819 int API_EXPORTED @n(libusb_device_handle *dev_handle)
+libusb_set_auto_detach_kernel_driver	39 @n 2084 int API_EXPORTED @n(
+libusb_set_configuration	39 @n 1622 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_set_debug	39 @n 2098 void API_EXPORTED @n(libusb_context *ctx, int level)
+libusb_set_interface_alt_setting	39 @n 1748 int API_EXPORTED @n(libusb_device_handle *dev_handle,
+libusb_set_iso_packet_lengths	37 @n 1714 static inline void @n(
+libusb_set_log_cb	39 @n 2135 void API_EXPORTED @n(libusb_context *ctx, libusb_log_cb cb,
+libusb_set_option	39 @n 2178 int API_EXPORTED @n(libusb_context *ctx,
+libusb_set_pollfd_notifiers	31 @n 2611 void API_EXPORTED @n(libusb_context *ctx,
+libusb_setlocale	40 @n 178 int API_EXPORTED @n(const char *locale)
+libusb_speed	37 @n 1020 enum @n {
+libusb_ss_endpoint_companion_descriptor	37 @n 741 struct @n {
+libusb_ss_usb_device_capability_attributes	37 @n 501 enum @n {
+libusb_ss_usb_device_capability_descriptor	37 @n 842 struct @n {
+libusb_standard_request	37 @n 347 enum @n {
+libusb_strerror	40 @n 213 DEFAULT_VISIBILITY const char * LIBUSB_CALL @n(int errcode)
+libusb_submit_transfer	31 @n 1488 int API_EXPORTED @n(struct libusb_transfer *transfer)
+libusb_supported_speed	37 @n 472 enum @n {
+libusb_testlib_logf	5 @n 41 void @n(const char *fmt, ...) PRINTF_FORMAT(1, 2);
+libusb_testlib_logf	3 @n 63 void @n(const char *fmt, ...)
+libusb_testlib_result	5 @n 36 } @n;
+libusb_testlib_run_tests	3 @n 74 int @n(int argc, char *argv[],
+libusb_transfer	37 @n 1222 struct @n {
+libusb_transfer_flags	37 @n 1148 enum @n {
+libusb_transfer_get_stream_id	31 @n 1640 uint32_t API_EXPORTED @n(
+libusb_transfer_set_stream_id	31 @n 1623 void API_EXPORTED @n(
+libusb_transfer_status	37 @n 1118 enum @n {
+libusb_transfer_type	37 @n 1099 enum @n {
+libusb_try_lock_events	31 @n 1765 int API_EXPORTED @n(libusb_context *ctx)
+libusb_unlock_event_waiters	31 @n 1963 void API_EXPORTED @n(libusb_context *ctx)
+libusb_unlock_events	31 @n 1823 void API_EXPORTED @n(libusb_context *ctx)
+libusb_unref_device	39 @n 1176 void API_EXPORTED @n(libusb_device *dev)
+libusb_usb_2_0_extension_attributes	37 @n 491 enum @n {
+libusb_usb_2_0_extension_descriptor	37 @n 816 struct @n {
+libusb_version	37 @n 950 struct @n {
+libusb_wait_for_event	31 @n 1995 int API_EXPORTED @n(libusb_context *ctx, struct timeval *tv)
+libusb_wrap_sys_device	39 @n 1238 int API_EXPORTED @n(libusb_context *ctx, intptr_t sys_dev,
+linux_default_scan_devices	63 @n 1308 static int @n(struct libusb_context *ctx)
+linux_device_disconnected	63 @n 1148 void @n(uint8_t busnum, uint8_t devaddr)
+linux_device_handle_priv	63 @n 130 struct @n {
+linux_device_priv	63 @n 122 struct @n {
+linux_enumerate_device	63 @n 1091 int @n(struct libusb_context *ctx,
+linux_get_device_address	63 @n 585 int @n(struct libusb_context *ctx, int detached,
+linux_get_parent_info	63 @n 1023 static int @n(struct libusb_device *dev, const char *sysfs_dir)
+linux_hotplug_enumerate	63 @n 1137 void @n(uint8_t busnum, uint8_t devaddr, const char *sys_name)
+linux_hotplug_poll	61 @n 193 static inline void @n(void)
+linux_netlink_event_thread_main	72 @n 347 static void *@n(void *arg)
+linux_netlink_hotplug_poll	72 @n 392 void @n(void)
+linux_netlink_parse	72 @n 189 static int @n(const char *buffer, size_t len, int *detached,
+linux_netlink_read_message	72 @n 282 static int @n(void)
+linux_netlink_start_event_monitor	72 @n 93 int @n(void)
+linux_netlink_stop_event_monitor	72 @n 152 int @n(void)
+linux_scan_devices	63 @n 452 static int @n(struct libusb_context *ctx)
+linux_start_event_monitor	61 @n 173 static inline int @n(void)
+linux_stop_event_monitor	61 @n 184 static inline void @n(void)
+linux_transfer_priv	63 @n 153 struct @n {
+linux_udev_event_thread_main	69 @n 161 static void *@n(void *arg)
+linux_udev_hotplug_poll	69 @n 308 void @n(void)
+linux_udev_scan_devices	69 @n 265 int @n(struct libusb_context *ctx)
+linux_udev_start_event_monitor	69 @n 44 int @n(void)
+linux_udev_stop_event_monitor	69 @n 131 int @n(void)
+list_add	34 @n 200 static inline void @n(struct list_head *entry, struct list_head *head)
+list_add_tail	34 @n 209 static inline void @n(struct list_head *entry,
+list_cut	34 @n 226 static inline void @n(struct list_head *list, struct list_head *head)
+list_del	34 @n 219 static inline void @n(struct list_head *entry)
+list_empty	34 @n 193 #@d @n(entry) ((entry)->next == (entry))
+list_entry	34 @n 158 #@d @n(ptr, type, member) \
+list_first_entry	34 @n 161 #@d @n(ptr, type, member) \
+list_for_each_entry	34 @n 173 #@d @n(pos, head, member, type)			\
+list_for_each_entry_safe	34 @n 178 #@d @n(pos, n, head, member, type)		\
+list_head	34 @n 149 struct @n {
+list_init	34 @n 195 static inline void @n(struct list_head *entry)
+list_next_entry	34 @n 164 #@d @n(ptr, type, member) \
+list_splice_front	34 @n 241 static inline void @n(struct list_head *list, struct list_head *head)
+load_system_library	58 @n 102 HMODULE @n(struct libusb_context *ctx, const char *name)
+load_usbdk_helper_dll	60 @n 81 static int @n(struct libusb_context *ctx)
+log_str	39 @n 2517 static void @n(enum libusb_log_level level, const char *str)
+log_v	39 @n 2559 static void @n(struct libusb_context *ctx, enum libusb_log_level level,
+logerror	86 @n 52 void @n(const char *format, ...)
+main	82 @n 589 int @n(void)
+main	83 @n 177 int @n(void)
+main	85 @n 974 int @n(int argc, char** argv)
+main	86 @n 81 int @n(int argc, char*argv[])
+main	4 @n 166 int @n(int argc, char *argv[])
+main	80 @n 52 int @n(void)
+main	81 @n 270 int @n(int argc, char *argv[])
+main	79 @n 80 int @n(int argc, char *argv[])
+main	189 @n 101 @n (argc, argv)
+main	187 @n 996 @n (argc, argv)
+measure	83 @n 155 static void @n(void)
+msleep	85 @n 46 static inline void @n(int msecs)
+my_index	187 @n 221 @n (str, chr)
+my_index	187 @n 199 # @d @n	strchr
+netbsd_cancel_transfer	52 @n 429 @n(struct usbi_transfer *itransfer)
+netbsd_claim_interface	52 @n 306 @n(struct libusb_device_handle *handle, uint8_t iface)
+netbsd_clear_halt	52 @n 355 @n(struct libusb_device_handle *handle, unsigned char endpoint)
+netbsd_close	52 @n 214 @n(struct libusb_device_handle *handle)
+netbsd_destroy_device	52 @n 375 @n(struct libusb_device *dev)
+netbsd_get_active_config_descriptor	52 @n 225 @n(struct libusb_device *dev,
+netbsd_get_config_descriptor	52 @n 240 @n(struct libusb_device *dev, uint8_t idx,
+netbsd_get_configuration	52 @n 276 @n(struct libusb_device_handle *handle, uint8_t *config)
+netbsd_get_device_list	52 @n 114 @n(struct libusb_context * ctx,
+netbsd_handle_transfer_completion	52 @n 439 @n(struct usbi_transfer *itransfer)
+netbsd_open	52 @n 192 @n(struct libusb_device_handle *handle)
+netbsd_release_interface	52 @n 320 @n(struct libusb_device_handle *handle, uint8_t iface)
+netbsd_set_configuration	52 @n 293 @n(struct libusb_device_handle *handle, int config)
+netbsd_set_interface_altsetting	52 @n 335 @n(struct libusb_device_handle *handle, uint8_t iface,
+netbsd_submit_transfer	52 @n 385 @n(struct usbi_transfer *itransfer)
+netlink_message_parse	72 @n 174 static const char *@n(const char *buffer, size_t len, const char *key)
+next_state	82 @n 390 static int @n(void)
+no_argument	188 @n 110 # @d @n		0
+node_args	46 @n 54 struct @n {
+normalize_path	64 @n 158 static char *@n(const char *path)
+null_cancel_transfer	67 @n 91 @n(struct usbi_transfer *itransfer)
+null_claim_interface	67 @n 60 @n(struct libusb_device_handle *handle, uint8_t iface)
+null_clear_halt	67 @n 79 @n(struct libusb_device_handle *handle, unsigned char endpoint)
+null_close	67 @n 35 @n(struct libusb_device_handle *handle)
+null_get_active_config_descriptor	67 @n 40 @n(struct libusb_device *dev,
+null_get_config_descriptor	67 @n 47 @n(struct libusb_device *dev, uint8_t idx,
+null_get_device_list	67 @n 22 @n(struct libusb_context * ctx,
+null_open	67 @n 29 @n(struct libusb_device_handle *handle)
+null_release_interface	67 @n 66 @n(struct libusb_device_handle *handle, uint8_t iface)
+null_set_configuration	67 @n 54 @n(struct libusb_device_handle *handle, int config)
+null_set_interface_altsetting	67 @n 72 @n(struct libusb_device_handle *handle, uint8_t iface,
+null_submit_transfer	67 @n 85 @n(struct usbi_transfer *itransfer)
+obsd_cancel_transfer	68 @n 467 @n(struct usbi_transfer *itransfer)
+obsd_claim_interface	68 @n 332 @n(struct libusb_device_handle *handle, uint8_t iface)
+obsd_clear_halt	68 @n 384 @n(struct libusb_device_handle *handle, unsigned char endpoint)
+obsd_close	68 @n 248 @n(struct libusb_device_handle *handle)
+obsd_destroy_device	68 @n 412 @n(struct libusb_device *dev)
+obsd_get_active_config_descriptor	68 @n 261 @n(struct libusb_device *dev,
+obsd_get_config_descriptor	68 @n 276 @n(struct libusb_device *dev, uint8_t idx,
+obsd_get_configuration	68 @n 304 @n(struct libusb_device_handle *handle, uint8_t *config)
+obsd_get_device_list	68 @n 118 @n(struct libusb_context * ctx,
+obsd_handle_transfer_completion	68 @n 477 @n(struct usbi_transfer *itransfer)
+obsd_open	68 @n 223 @n(struct libusb_device_handle *handle)
+obsd_release_interface	68 @n 346 @n(struct libusb_device_handle *handle, uint8_t iface)
+obsd_set_configuration	68 @n 316 @n(struct libusb_device_handle *handle, int config)
+obsd_set_interface_altsetting	68 @n 361 @n(struct libusb_device_handle *handle, uint8_t iface,
+obsd_submit_transfer	68 @n 423 @n(struct usbi_transfer *itransfer)
+op_alloc_streams	63 @n 1657 static int @n(struct libusb_device_handle *handle,
+op_attach_kernel_driver	63 @n 1752 static int @n(struct libusb_device_handle *handle,
+op_cancel_transfer	63 @n 2281 static int @n(struct usbi_transfer *itransfer)
+op_claim_interface	63 @n 1820 static int @n(struct libusb_device_handle *handle, uint8_t interface)
+op_clear_halt	63 @n 1548 static int @n(struct libusb_device_handle *handle,
+op_clear_transfer_priv	63 @n 2308 static void @n(struct usbi_transfer *itransfer)
+op_close	63 @n 1418 static void @n(struct libusb_device_handle *dev_handle)
+op_destroy_device	63 @n 1842 static void @n(struct libusb_device *dev)
+op_detach_kernel_driver	63 @n 1718 static int @n(struct libusb_device_handle *handle,
+op_dev_mem_alloc	63 @n 1671 static void *@n(struct libusb_device_handle *handle, size_t len)
+op_dev_mem_free	63 @n 1684 static int @n(struct libusb_device_handle *handle, void *buffer,
+op_exit	63 @n 422 static void @n(struct libusb_context *ctx)
+op_free_streams	63 @n 1664 static int @n(struct libusb_device_handle *handle,
+op_get_active_config_descriptor	63 @n 789 static int @n(struct libusb_device *dev,
+op_get_config_descriptor	63 @n 820 static int @n(struct libusb_device *dev,
+op_get_config_descriptor_by_value	63 @n 771 static int @n(struct libusb_device *dev,
+op_get_configuration	63 @n 1429 static int @n(struct libusb_device_handle *handle,
+op_handle_events	63 @n 2692 static int @n(struct libusb_context *ctx,
+op_hotplug_poll	63 @n 469 static void @n(void)
+op_init	63 @n 352 static int @n(struct libusb_context *ctx)
+op_kernel_driver_active	63 @n 1695 static int @n(struct libusb_device_handle *handle,
+op_open	63 @n 1391 static int @n(struct libusb_device_handle *handle)
+op_release_interface	63 @n 1828 static int @n(struct libusb_device_handle *handle, uint8_t interface)
+op_reset_device	63 @n 1569 static int @n(struct libusb_device_handle *handle)
+op_set_configuration	63 @n 1458 static int @n(struct libusb_device_handle *handle, int config)
+op_set_interface	63 @n 1524 static int @n(struct libusb_device_handle *handle, uint8_t interface,
+op_set_option	63 @n 437 static int @n(struct libusb_context *ctx, enum libusb_option option, va_list ap)
+op_submit_transfer	63 @n 2260 static int @n(struct usbi_transfer *itransfer)
+op_wrap_sys_device	63 @n 1341 static int @n(struct libusb_context *ctx,
+open_sysfs_attr	63 @n 474 static int @n(struct libusb_context *ctx,
+option	188 @n 94 struct @n
+optional_argument	188 @n 112 # @d @n	2
+parse_bin	87 @n 391 static int @n(FILE *image, void *context,
+parse_bos	33 @n 760 static int @n(struct libusb_context *ctx,
+parse_config_descriptors	63 @n 675 static int @n(struct libusb_device *dev)
+parse_configuration	33 @n 347 static int @n(struct libusb_context *ctx,
+parse_descriptor	33 @n 43 static void @n(const void *source, const char *descriptor, void *dest)
+parse_endpoint	33 @n 83 static int @n(struct libusb_context *ctx,
+parse_ihex	87 @n 242 static int @n(FILE *image, void *context,
+parse_iic	87 @n 429 static int @n(FILE *image, void *context,
+parse_interface	33 @n 191 static int @n(libusb_context *ctx,
+parse_u8	63 @n 1168 static int @n(const char *str, uint8_t *val_p)
+perr	85 @n 56 static void @n(char const *format, ...)
+poll_thread_main	82 @n 192 static void *@n(void *arg)
+print_2_0_ext_cap	81 @n 80 static void @n(struct libusb_usb_2_0_extension_descriptor *usb_2_0_ext_cap)
+print_altsetting	81 @n 63 static void @n(const struct libusb_interface_descriptor *interface)
+print_bos	81 @n 98 static void @n(libusb_device_handle *handle)
+print_configuration	81 @n 147 static void @n(struct libusb_config_descriptor *config)
+print_device	81 @n 163 static void @n(libusb_device *dev, libusb_device_handle *handle)
+print_device_cap	85 @n 758 static void @n(struct libusb_bos_dev_capability_descriptor *dev_cap)
+print_devs	80 @n 24 static void @n(libusb_device **devs)
+print_endpoint	81 @n 34 static void @n(const struct libusb_endpoint_descriptor *endpoint)
+print_endpoint_comp	81 @n 26 static void @n(const struct libusb_ss_endpoint_companion_descriptor *ep_comp)
+print_f0_data	82 @n 223 static int @n(void)
+print_interface	81 @n 139 static void @n(const struct libusb_interface *interface)
+print_ss_usb_cap	81 @n 87 static void @n(struct libusb_ss_usb_device_capability_descriptor *ss_usb_cap)
+print_usage	86 @n 66 static int @n(int error_code) {
+print_usage	3 @n 55 static void @n(const char *progname)
+process_new_device	70 @n 1090 static enum libusb_error @n (struct libusb_context *ctx, struct darwin_cached_device *cached_device,
+putenv	85 @n 33 #@d @n _@n
+ram_mode	87 @n 495 } @n;
+ram_poke	87 @n 505 static int @n(void *context, uint32_t addr, bool external,
+ram_poke_context	87 @n 497 struct @n {
+raw_desc_to_config	33 @n 458 static int @n(struct libusb_context *ctx,
+read_ms_winsub_feature_descriptors	85 @n 706 static void @n(libusb_device_handle *handle, uint8_t bRequest, int iface_number)
+read_sysfs_attr	63 @n 496 static int @n(struct libusb_context *ctx,
+reap_action	63 @n 137 enum @n {
+reap_for_handle	63 @n 2653 static int @n(struct libusb_device_handle *handle)
+release_interface	63 @n 1508 static int @n(struct libusb_device_handle *handle, unsigned int iface)
+remove_from_flying_list	31 @n 1457 static int @n(struct usbi_transfer *itransfer)
+request_exit	82 @n 182 static void @n(sig_atomic_t code)
+required_argument	188 @n 111 # @d @n	1
+safe_free	57 @n 59 #@d @n(p) do {if (p != NULL) {free((void *)p); p = NULL;}} while (0)
+save_to_file	82 @n 373 static int @n(unsigned char *data)
+seek_to_next_config	63 @n 639 static int @n(struct libusb_context *ctx,
+semaphore_create	82 @n 51 static inline semaphore_t @n(void)
+semaphore_create	82 @n 102 static inline semaphore_t @n(void)
+semaphore_destroy	82 @n 75 static inline void @n(semaphore_t semaphore)
+semaphore_destroy	82 @n 117 static inline void @n(semaphore_t semaphore)
+semaphore_give	82 @n 65 static inline void @n(semaphore_t semaphore)
+semaphore_give	82 @n 107 static inline void @n(semaphore_t semaphore)
+semaphore_t	82 @n 92 @t HANDLE @n;
+semaphore_t	82 @n 48 @t sem_t * @n;
+semaphore_take	82 @n 70 static inline void @n(semaphore_t semaphore)
+semaphore_take	82 @n 112 static inline void @n(semaphore_t semaphore)
+send_mass_storage_command	85 @n 316 static int @n(libusb_device_handle *handle, uint8_t endpoint, uint8_t lun,
+set_composite_interface	64 @n 1355 static int @n(struct libusb_context *ctx, struct libusb_device *dev,
+set_fd_cloexec_nb	72 @n 56 static int @n(int fd, int socktype)
+set_hid_interface	64 @n 1402 static int @n(struct libusb_context *ctx, struct libusb_device *dev,
+set_hwstat	82 @n 265 static int @n(unsigned char data)
+set_mode	82 @n 283 static int @n(unsigned char data)
+set_mode_async	82 @n 314 static int @n(unsigned char data)
+set_transfer_priv_handle	57 @n 385 static inline void @n(struct usbi_transfer *itransfer, HANDLE handle)
+set_xbox_actuators	85 @n 300 static int @n(libusb_device_handle *handle, uint8_t left, uint8_t right)
+setup_signals	82 @n 572 static void @n(void)
+sig_hdlr	83 @n 169 static void @n(int signum)
+sighandler	82 @n 565 static void @n(int signum)
+skip_external	87 @n 494 	@n		/* second phase, second-stage loader */
+skip_internal	87 @n 493 	@n,		/* first phase, second-stage loader */
+snprintf	82 @n 37 #@d @n _@n
+snprintf	85 @n 32 #@d @n _@n
+snprintf	34 @n 305 #@d @n usbi_@n
+solaris_submit_ctrl_on_default	65 @n 1276 @n(struct libusb_transfer *transfer)
+ssize_t	37 @n 35 @t SSIZE_T @n;
+static_assert	34 @n 44 #@d @n(cond, msg) _Static_assert(cond, msg)
+string_list_t	65 @n 53 } @n;
+string_to_guid	64 @n 123 static bool @n(const char guid_string[MAX_GUID_STRING_LENGTH], GUID *guid)
+submit_bulk_transfer	70 @n 1875 static int @n(struct usbi_transfer *itransfer) {
+submit_bulk_transfer	63 @n 1902 static int @n(struct usbi_transfer *itransfer)
+submit_control_transfer	70 @n 2069 static int @n(struct usbi_transfer *itransfer) {
+submit_control_transfer	63 @n 2221 static int @n(struct usbi_transfer *itransfer)
+submit_iso_transfer	70 @n 1979 static int @n(struct usbi_transfer *itransfer) {
+submit_iso_transfer	63 @n 2074 static int @n(struct usbi_transfer *itransfer)
+submit_stream_transfer	70 @n 1948 static int @n(struct usbi_transfer *itransfer) {
+sunos_add_devices	65 @n 541 @n(di_devlink_t link, void *arg)
+sunos_append_to_string_list	65 @n 261 @n(string_list_t *list, const char *arg)
+sunos_async_callback	65 @n 1152 @n(union sigval arg)
+sunos_attach_kernel_driver	65 @n 405 @n(struct libusb_device_handle *dev_handle,
+sunos_build_argv_list	65 @n 297 @n(string_list_t *list)
+sunos_cancel_transfer	65 @n 1421 @n(struct usbi_transfer *itransfer)
+sunos_check_device_and_status_open	65 @n 829 @n(struct libusb_device_handle *hdl,
+sunos_claim_interface	65 @n 1091 @n(struct libusb_device_handle *handle, uint8_t iface)
+sunos_clear_halt	65 @n 1344 @n(struct libusb_device_handle *handle, unsigned char endpoint)
+sunos_close	65 @n 992 @n(struct libusb_device_handle *handle)
+sunos_destroy_device	65 @n 1360 @n(struct libusb_device *dev)
+sunos_detach_kernel_driver	65 @n 348 @n(struct libusb_device_handle *dev_handle,
+sunos_dev_handle_priv_t	46 @n 47 } @n;
+sunos_dev_priv_t	46 @n 35 } @n;
+sunos_device_handle_priv	46 @n 42 @t struct @n {
+sunos_device_priv	46 @n 30 @t struct @n {
+sunos_do_async_io	65 @n 1190 @n(struct libusb_transfer *transfer)
+sunos_ep_priv_t	46 @n 40 } @n;
+sunos_exec_command	65 @n 304 @n(struct libusb_context *ctx, const char *path,
+sunos_fill_in_dev_info	65 @n 456 @n(di_node_t node, struct libusb_device *dev)
+sunos_find_interface	65 @n 787 @n(struct libusb_device_handle *hdev,
+sunos_free_string_list	65 @n 284 @n(string_list_t *list)
+sunos_get_active_config_descriptor	65 @n 1005 @n(struct libusb_device *dev,
+sunos_get_config_descriptor	65 @n 1049 @n(struct libusb_device *dev, uint8_t idx,
+sunos_get_configuration	65 @n 1058 @n(struct libusb_device_handle *handle, uint8_t *config)
+sunos_get_device_list	65 @n 682 @n(struct libusb_context * ctx,
+sunos_get_link	65 @n 83 static int @n(di_devlink_t devlink, void *arg)
+sunos_handle_transfer_completion	65 @n 1456 @n(struct usbi_transfer *itransfer)
+sunos_kernel_driver_active	65 @n 224 @n(struct libusb_device_handle *dev_handle, uint8_t interface)
+sunos_new_string_list	65 @n 242 @n(void)
+sunos_open	65 @n 961 @n(struct libusb_device_handle *handle)
+sunos_physpath_to_devlink	65 @n 112 static int @n(
+sunos_release_interface	65 @n 1101 @n(struct libusb_device_handle *handle, uint8_t iface)
+sunos_set_configuration	65 @n 1070 @n(struct libusb_device_handle *handle, int config)
+sunos_set_interface_altsetting	65 @n 1114 @n(struct libusb_device_handle *handle, uint8_t iface,
+sunos_submit_transfer	65 @n 1371 @n(struct usbi_transfer *itransfer)
+sunos_transfer_priv	46 @n 49 @t	struct @n {
+sunos_usb_close_all_eps	65 @n 751 @n(sunos_dev_handle_priv_t *hdev)
+sunos_usb_close_ep0	65 @n 769 @n(sunos_dev_handle_priv_t *hdev)
+sunos_usb_ep_index	65 @n 780 @n(uint8_t ep_addr)
+sunos_usb_get_status	65 @n 1489 @n(struct libusb_context *ctx, int fd)
+sunos_usb_ioctl	65 @n 142 @n(struct libusb_device *dev, int cmd)
+sunos_usb_open_ep0	65 @n 723 @n(sunos_dev_handle_priv_t *hpriv, sunos_dev_priv_t *dpriv)
+sunos_walk_minor_node_link	65 @n 655 @n(di_node_t node, void *args)
+sunos_xfer_priv_t	46 @n 52 } @n;
+sync_intr	82 @n 359 static int @n(unsigned char type)
+sync_transfer_cb	38 @n 35 static void LIBUSB_CALL @n(struct libusb_transfer *transfer)
+sync_transfer_wait_for_completion	38 @n 43 static void @n(struct libusb_transfer *transfer)
+sysfs_get_active_config	63 @n 577 static int @n(struct libusb_device *dev, int *config)
+sysfs_get_device_list	63 @n 1272 static int @n(struct libusb_context *ctx)
+sysfs_scan_device	63 @n 564 static int @n(struct libusb_context *ctx, const char *devname)
+test_default_context_change	4 @n 120 static libusb_testlib_result @n(void)
+test_device	85 @n 797 static int @n(uint16_t vid, uint16_t pid)
+test_get_device_list	4 @n 49 static libusb_testlib_result @n(void)
+test_hid	85 @n 609 static int @n(libusb_device_handle *handle, uint8_t endpoint_in)
+test_init_and_exit	4 @n 29 static libusb_testlib_result @n(void)
+test_many_device_lists	4 @n 78 static libusb_testlib_result @n(void)
+test_mass_storage	85 @n 455 static int @n(libusb_device_handle *handle, uint8_t endpoint_in, uint8_t endpoint_out)
+test_result_to_str	3 @n 39 static const char *@n(libusb_testlib_result result)
+test_type	85 @n 140 static enum @n {
+test_wrapped_device	81 @n 262 static int @n(const char *device_name)
+test_wrapped_device	81 @n 241 static int @n(const char *device_name)
+thread_create	82 @n 80 static inline int @n(thread_t *thread,
+thread_create	82 @n 122 static inline int @n(thread_t *thread,
+thread_join	82 @n 86 static inline void @n(thread_t thread)
+thread_join	82 @n 133 static inline void @n(thread_t thread)
+thread_return_t	82 @n 99 @t unsigned @n;
+thread_return_t	82 @n 96 @t DWORD @n;
+thread_t	82 @n 93 @t HANDLE @n;
+thread_t	82 @n 49 @t p@n @n;
+timespec	54 @n 63 struct @n {
+udev_device_info	69 @n 209 static int @n(struct libusb_context *ctx, int detached,
+udev_hotplug_event	69 @n 228 static void @n(struct udev_device *udev_dev)
+unload_usbdk_helper_dll	60 @n 73 static void @n(void)
+usb_device_t	55 @n 141 #@d @n@4IOUSBDeviceInterface197
+usb_device_t	55 @n 120 #@d @n@4IOUSBDeviceInterface320
+usb_device_t	55 @n 127 #@d @n@4IOUSBDeviceInterface300
+usb_device_t	55 @n 134 #@d @n@4IOUSBDeviceInterface245
+usb_device_t	55 @n 113 #@d @n@4IOUSBDeviceInterface500
+usb_device_t	55 @n 106 #@d @n@4IOUSBDeviceInterface650
+usb_do_io	65 @n 1228 @n(struct libusb_context *ctx, int fd, int stat_fd, void *data, size_t size, int flag, int *status)
+usb_dump_data	65 @n 1132 @n(const void *data, size_t size)
+usb_find_interface_matching_location	70 @n 1818 static io_service_t @n (const io_name_t class_name, UInt8 interface_number, UInt32 location) {
+usb_interface	85 @n 38 #@d @n interface
+usb_interface_t	55 @n 91 #@d @n IOUSBInterfaceInterface220
+usb_interface_t	55 @n 63 #@d @n IOUSBInterfaceInterface550
+usb_interface_t	55 @n 70 #@d @n IOUSBInterfaceInterface500
+usb_interface_t	55 @n 77 #@d @n IOUSBInterfaceInterface300
+usb_interface_t	55 @n 84 #@d @n IOUSBInterfaceInterface245
+usb_interface_t	55 @n 49 #@d @n IOUSBInterfaceInterface700
+usb_interface_t	55 @n 56 #@d @n IOUSBInterfaceInterface650
+usb_interface_t	55 @n 42 #@d @n IOUSBInterfaceInterface800
+usb_raw_command	71 @n 186 } @n;
+usb_raw_command_id	71 @n 41 } @n;
+usb_raw_command_status	71 @n 59 } @n;
+usb_setup_device_iterator	70 @n 223 static IOReturn @n (io_iterator_t *deviceIterator, UInt32 location) {
+usbd_status_to_libusb_transfer_status	58 @n 271 enum libusb_transfer_status @n(USBD_STATUS status)
+usbdk_cache_config_descriptors	60 @n 242 static int @n(struct libusb_context *ctx,
+usbdk_claim_interface	60 @n 454 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface)
+usbdk_clear_halt	60 @n 480 static int @n(struct libusb_device_handle *dev_handle, unsigned char endpoint)
+usbdk_clear_transfer_priv	60 @n 512 static void @n(struct usbi_transfer *itransfer)
+usbdk_close	60 @n 427 static void @n(struct libusb_device_handle *dev_handle)
+usbdk_copy_transfer_data	60 @n 671 static enum libusb_transfer_status @n(struct usbi_transfer *itransfer, DWORD length)
+usbdk_destroy_device	60 @n 504 static void @n(struct libusb_device *dev)
+usbdk_device_handle_priv	57 @n 265 struct @n {
+usbdk_device_init	60 @n 279 static void @n(struct libusb_device *dev, PUSB_DK_DEVICE_INFO info)
+usbdk_device_priv	57 @n 233 struct @n {
+usbdk_device_priv_init	60 @n 269 static inline int @n(struct libusb_context *ctx, struct libusb_device *dev, PUSB_DK_DEVICE_INFO info)
+usbdk_do_bulk_transfer	60 @n 556 static int @n(struct usbi_transfer *itransfer)
+usbdk_do_control_transfer	60 @n 523 static int @n(struct usbi_transfer *itransfer)
+usbdk_do_iso_transfer	60 @n 598 static int @n(struct usbi_transfer *itransfer)
+usbdk_exit	60 @n 210 static void @n(struct libusb_context *ctx)
+usbdk_get_active_config_descriptor	60 @n 393 static int @n(struct libusb_device *dev, void *buffer, size_t len)
+usbdk_get_config_descriptor	60 @n 362 static int @n(struct libusb_device *dev, uint8_t config_index, void *buffer, size_t len)
+usbdk_get_config_descriptor_by_value	60 @n 375 static int @n(struct libusb_device *dev, uint8_t bConfigurationValue,
+usbdk_get_configuration	60 @n 438 static int @n(struct libusb_device_handle *dev_handle, uint8_t *config)
+usbdk_get_device_list	60 @n 313 static int @n(struct libusb_context *ctx, struct discovered_devs **_discdevs)
+usbdk_get_session_id_for_device	60 @n 216 static int @n(struct libusb_context *ctx,
+usbdk_init	60 @n 153 static int @n(struct libusb_context *ctx)
+usbdk_open	60 @n 400 static int @n(struct libusb_device_handle *dev_handle)
+usbdk_release_config_descriptors	60 @n 231 static void @n(struct usbdk_device_priv *priv, uint8_t count)
+usbdk_release_interface	60 @n 473 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface)
+usbdk_reset_device	60 @n 492 static int @n(struct libusb_device_handle *dev_handle)
+usbdk_set_configuration	60 @n 447 static int @n(struct libusb_device_handle *dev_handle, uint8_t config)
+usbdk_set_interface_altsetting	60 @n 461 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting)
+usbdk_submit_transfer	60 @n 649 static int @n(struct usbi_transfer *itransfer)
+usbdk_transfer_priv	57 @n 286 struct @n {
+usbfs_connectinfo	61 @n 97 struct @n {
+usbfs_ctrltransfer	61 @n 30 struct @n {
+usbfs_disconnect_claim	61 @n 118 struct @n {
+usbfs_get_active_config	63 @n 836 static int @n(struct libusb_device *dev, int fd)
+usbfs_get_device_list	63 @n 1225 static int @n(struct libusb_context *ctx)
+usbfs_get_speed	63 @n 882 static enum libusb_speed @n(struct libusb_context *ctx, int fd)
+usbfs_getdriver	61 @n 51 struct @n {
+usbfs_ioctl	61 @n 102 struct @n {
+usbfs_iso_packet_desc	61 @n 67 struct @n {
+usbfs_scan_busdir	63 @n 1185 static int @n(struct libusb_context *ctx, uint8_t busnum)
+usbfs_setinterface	61 @n 43 struct @n {
+usbfs_streams	61 @n 124 struct @n {
+usbfs_urb	61 @n 78 struct @n {
+usbi_add_event_source	31 @n 2648 int @n(struct libusb_context *ctx, usbi_os_handle_t os_handle, short poll_events)
+usbi_alloc_device	39 @n 700 struct libusb_device *@n(struct libusb_context *ctx,
+usbi_alloc_event_data	51 @n 129 int @n(struct libusb_context *ctx)
+usbi_alloc_event_data	47 @n 189 int @n(struct libusb_context *ctx)
+usbi_arm_timer	51 @n 73 int @n(usbi_timer_t *timer, const struct timespec *timeout)
+usbi_arm_timer	47 @n 164 int @n(usbi_timer_t *timer, const struct timespec *timeout)
+usbi_atomic_dec	34 @n 111 #@d @n(a)	(atomic_fetch_add((a), -1) - 1)
+usbi_atomic_dec	34 @n 104 #@d @n(a)	InterlockedDecrement((a))
+usbi_atomic_inc	34 @n 110 #@d @n(a)	(atomic_fetch_add((a), 1) + 1)
+usbi_atomic_inc	34 @n 103 #@d @n(a)	InterlockedIncrement((a))
+usbi_atomic_load	34 @n 108 #@d @n(a)	atomic_load((a))
+usbi_atomic_load	34 @n 101 #@d @n(a)	(*(a))
+usbi_atomic_store	34 @n 109 #@d @n(a, v)	atomic_store((a), (v))
+usbi_atomic_store	34 @n 102 #@d @n(a, v)	(*(a)) = (v)
+usbi_atomic_t	34 @n 107 @t atomic_long @n;
+usbi_atomic_t	34 @n 100 @t volatile LONG @n;
+usbi_bos_desc_buf	34 @n 689 union @n {
+usbi_bos_descriptor	34 @n 666 struct @n {
+usbi_clear_event	51 @n 49 void @n(usbi_event_t *event)
+usbi_clear_event	47 @n 136 void @n(usbi_event_t *event)
+usbi_cond_broadcast	54 @n 80 static inline void @n(usbi_cond_t *cond)
+usbi_cond_broadcast	45 @n 69 static inline void @n(usbi_cond_t *cond)
+usbi_cond_destroy	54 @n 84 static inline void @n(usbi_cond_t *cond)
+usbi_cond_destroy	45 @n 73 static inline void @n(usbi_cond_t *cond)
+usbi_cond_init	59 @n 42 void @n(pthread_cond_t *cond)
+usbi_cond_init	54 @n 70 static inline void @n(usbi_cond_t *cond)
+usbi_cond_t	54 @n 69 @t CONDITION_VARIABLE @n;
+usbi_cond_t	45 @n 61 @t pthread_cond_t @n;
+usbi_cond_timedwait	66 @n 24 int @n(usbi_cond_t *cond,
+usbi_cond_timedwait	59 @n 56 int @n(pthread_cond_t *cond,
+usbi_cond_wait	54 @n 74 static inline void @n(usbi_cond_t *cond, usbi_mutex_t *mutex)
+usbi_cond_wait	45 @n 63 static inline void @n(usbi_cond_t *cond, usbi_mutex_t *mutex)
+usbi_config_desc_buf	34 @n 677 union @n {
+usbi_configuration_descriptor	34 @n 637 struct @n {
+usbi_connect_device	39 @n 721 void @n(struct libusb_device *dev)
+usbi_create_event	51 @n 26 int @n(usbi_event_t *event)
+usbi_create_event	47 @n 47 int @n(usbi_event_t *event)
+usbi_create_timer	51 @n 56 int @n(usbi_timer_t *timer)
+usbi_create_timer	47 @n 147 int @n(usbi_timer_t *timer)
+usbi_dbg	34 @n 327 #@d @n(ctx, ...)	do {} while (0)
+usbi_dbg	34 @n 320 #@d @n(ctx ,...)@6	_usbi_log(ctx, LIBUSB_LOG_LEVEL_DEBUG, __VA_ARGS__)
+usbi_descriptor_header	34 @n 615 struct @n {
+usbi_destroy_event	51 @n 37 void @n(usbi_event_t *event)
+usbi_destroy_event	47 @n 113 void @n(usbi_event_t *event)
+usbi_destroy_timer	51 @n 67 void @n(usbi_timer_t *timer)
+usbi_destroy_timer	47 @n 158 void @n(usbi_timer_t *timer)
+usbi_device_descriptor	34 @n 620 struct @n {
+usbi_disarm_timer	51 @n 104 int @n(usbi_timer_t *timer)
+usbi_disarm_timer	47 @n 176 int @n(usbi_timer_t *timer)
+usbi_disconnect_device	39 @n 734 void @n(struct libusb_device *dev)
+usbi_end_event_handling	34 @n 478 static inline void @n(struct libusb_context *ctx)
+usbi_err	34 @n 324 #@d @n(ctx, ...)	UNUSED(ctx)
+usbi_err	34 @n 317 #@d @n(ctx, ...)	_usbi_log(ctx, LIBUSB_LOG_LEVEL_ERROR, __VA_ARGS__)
+usbi_event	48 @n 27 @t struct @n {
+usbi_event	44 @n 37 @t struct @n {
+usbi_event	44 @n 30 @t struct @n {
+usbi_event_flags	34 @n 447 enum @n {
+usbi_event_source	34 @n 782 struct @n {
+usbi_event_source_data	34 @n 783 	struct @n {
+usbi_event_source_notification	31 @n 2633 static void @n(struct libusb_context *ctx)
+usbi_event_t	48 @n 29 } @n;
+usbi_event_t	44 @n 39 } @n;
+usbi_event_t	44 @n 32 } @n;
+usbi_get_context	34 @n 442 static inline struct libusb_context *@n(struct libusb_context *ctx)
+usbi_get_context_priv	34 @n 846 static inline void *@n(struct libusb_context *ctx)
+usbi_get_device_by_session_id	39 @n 774 struct libusb_device *@n(struct libusb_context *ctx,
+usbi_get_device_handle_priv	34 @n 856 static inline void *@n(struct libusb_device_handle *dev_handle)
+usbi_get_device_priv	34 @n 851 static inline void *@n(struct libusb_device *dev)
+usbi_get_monotonic_time	70 @n 2298 void @n(struct timespec *tp) {
+usbi_get_monotonic_time	58 @n 840 void @n(struct timespec *tp)
+usbi_get_monotonic_time	34 @n 523 static inline void @n(struct timespec *tp)
+usbi_get_real_time	70 @n 2308 void @n(struct timespec *tp) {
+usbi_get_real_time	34 @n 527 static inline void @n(struct timespec *tp)
+usbi_get_tid	59 @n 84 unsigned int @n(void)
+usbi_get_tid	54 @n 108 static inline unsigned int @n(void)
+usbi_get_transfer_priv	34 @n 861 static inline void *@n(struct usbi_transfer *itransfer)
+usbi_handle_disconnect	31 @n 2780 void @n(struct libusb_device_handle *dev_handle)
+usbi_handle_transfer_cancellation	31 @n 1706 int @n(struct usbi_transfer *itransfer)
+usbi_handle_transfer_completion	31 @n 1657 int @n(struct usbi_transfer *itransfer,
+usbi_handling_events	34 @n 468 static inline int @n(struct libusb_context *ctx)
+usbi_hotplug_callback	34 @n 719 struct @n {
+usbi_hotplug_exit	30 @n 164 void @n(struct libusb_context *ctx)
+usbi_hotplug_flags	34 @n 695 enum @n {
+usbi_hotplug_init	30 @n 152 void @n(struct libusb_context *ctx)
+usbi_hotplug_match_cb	30 @n 214 static int @n(struct libusb_device *dev,
+usbi_hotplug_message	34 @n 745 struct @n {
+usbi_hotplug_notification	30 @n 239 void @n(struct libusb_context *ctx, struct libusb_device *dev,
+usbi_hotplug_process	30 @n 271 void @n(struct libusb_context *ctx, struct list_head *hotplug_msgs)
+usbi_info	34 @n 326 #@d @n(ctx, ...)	UNUSED(ctx)
+usbi_info	34 @n 319 #@d @n(ctx, ...)	_usbi_log(ctx, LIBUSB_LOG_LEVEL_INFO, __VA_ARGS__)
+usbi_interface_descriptor	34 @n 648 struct @n {
+usbi_io_exit	31 @n 1221 void @n(struct libusb_context *ctx)
+usbi_io_init	31 @n 1156 int @n(struct libusb_context *ctx)
+usbi_localize_device_descriptor	34 @n 514 static inline void @n(struct libusb_device_descriptor *desc)
+usbi_log	39 @n 2653 void @n(struct libusb_context *ctx, enum libusb_log_level level,
+usbi_mutex_destroy	54 @n 55 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_destroy	45 @n 56 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_init	54 @n 39 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_init	45 @n 40 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_lock	54 @n 43 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_lock	45 @n 44 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_static_lock	54 @n 28 static inline void @n(usbi_mutex_static_t *mutex)
+usbi_mutex_static_lock	45 @n 30 static inline void @n(usbi_mutex_static_t *mutex)
+usbi_mutex_static_t	54 @n 27 @t LONG @n;
+usbi_mutex_static_t	45 @n 29 @t pthread_mutex_t @n;
+usbi_mutex_static_unlock	54 @n 33 static inline void @n(usbi_mutex_static_t *mutex)
+usbi_mutex_static_unlock	45 @n 34 static inline void @n(usbi_mutex_static_t *mutex)
+usbi_mutex_t	54 @n 38 @t CRITICAL_SECTION @n;
+usbi_mutex_t	45 @n 39 @t pthread_mutex_t @n;
+usbi_mutex_trylock	54 @n 51 static inline int @n(usbi_mutex_t *mutex)
+usbi_mutex_trylock	45 @n 52 static inline int @n(usbi_mutex_t *mutex)
+usbi_mutex_unlock	54 @n 47 static inline void @n(usbi_mutex_t *mutex)
+usbi_mutex_unlock	45 @n 48 static inline void @n(usbi_mutex_t *mutex)
+usbi_nfds_t	47 @n 44 @t unsigned int @n;
+usbi_nfds_t	47 @n 42 @t nfds_t @n;
+usbi_option	34 @n 794 struct @n {
+usbi_os_backend	34 @n 886 struct @n {
+usbi_os_handle_t	48 @n 24 @t HANDLE @n;
+usbi_os_handle_t	44 @n 26 @t int @n;
+usbi_reallocf	34 @n 249 static inline void *@n(void *ptr, size_t size)
+usbi_remove_event_source	31 @n 2672 void @n(struct libusb_context *ctx, usbi_os_handle_t os_handle)
+usbi_reported_events	34 @n 825 struct @n {
+usbi_sanitize_device	39 @n 750 int @n(struct libusb_device *dev)
+usbi_signal_event	51 @n 43 void @n(usbi_event_t *event)
+usbi_signal_event	47 @n 126 void @n(usbi_event_t *event)
+usbi_signal_transfer_completion	31 @n 1728 void @n(struct usbi_transfer *itransfer)
+usbi_snprintf	39 @n 2488 int @n(char *str, size_t size, const char *format, ...)
+usbi_start_event_handling	34 @n 473 static inline void @n(struct libusb_context *ctx)
+usbi_string_desc_buf	34 @n 683 union @n {
+usbi_string_descriptor	34 @n 660 struct @n {
+usbi_timer	48 @n 35 @t struct @n {
+usbi_timer	44 @n 47 @t struct @n {
+usbi_timer_t	48 @n 37 } @n;
+usbi_timer_t	44 @n 49 } @n;
+usbi_timer_valid	48 @n 41 static inline int @n(usbi_timer_t *timer)
+usbi_timer_valid	44 @n 53 static inline int @n(usbi_timer_t *timer)
+usbi_tls_key_create	54 @n 90 static inline void @n(usbi_tls_key_t *key)
+usbi_tls_key_create	45 @n 79 static inline void @n(usbi_tls_key_t *key)
+usbi_tls_key_delete	54 @n 103 static inline void @n(usbi_tls_key_t key)
+usbi_tls_key_delete	45 @n 91 static inline void @n(usbi_tls_key_t key)
+usbi_tls_key_get	54 @n 95 static inline void *@n(usbi_tls_key_t key)
+usbi_tls_key_get	45 @n 83 static inline void *@n(usbi_tls_key_t key)
+usbi_tls_key_set	54 @n 99 static inline void @n(usbi_tls_key_t key, void *ptr)
+usbi_tls_key_set	45 @n 87 static inline void @n(usbi_tls_key_t key, void *ptr)
+usbi_tls_key_t	54 @n 89 @t DWORD @n;
+usbi_tls_key_t	45 @n 78 @t pthread_key_t @n;
+usbi_transfer	34 @n 555 struct @n {
+usbi_transfer_state_flags	34 @n 579 enum @n {
+usbi_transfer_timeout_flags	34 @n 590 enum @n {
+usbi_using_timer	34 @n 815 static inline int @n(struct libusb_context *ctx)
+usbi_vsnprintf	39 @n 2500 int @n(char *str, size_t size, const char *format, va_list args)
+usbi_wait_for_events	51 @n 167 int @n(struct libusb_context *ctx,
+usbi_wait_for_events	47 @n 218 int @n(struct libusb_context *ctx,
+usbi_warn	34 @n 325 #@d @n(ctx, ...)	UNUSED(ctx)
+usbi_warn	34 @n 318 #@d @n(ctx, ...)	_usbi_log(ctx, LIBUSB_LOG_LEVEL_WARNING, __VA_ARGS__)
+uuid_to_string	85 @n 177 static char* @n(const uint8_t* uuid)
+vsnprintf	34 @n 306 #@d @n usbi_@n
+walk_link	46 @n 67 @t struct @n {
+walk_link_t	46 @n 71 } @n;
+windows_assign_endpoints	64 @n 513 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting)
+windows_backend	57 @n 309 struct @n {
+windows_cancel_transfer	58 @n 759 static int @n(struct usbi_transfer *itransfer)
+windows_claim_interface	58 @n 667 static int @n(struct libusb_device_handle *dev_handle, uint8_t interface_number)
+windows_clear_halt	58 @n 686 static int @n(struct libusb_device_handle *dev_handle, unsigned char endpoint)
+windows_close	58 @n 626 static void @n(struct libusb_device_handle *dev_handle)
+windows_context_priv	57 @n 338 struct @n {
+windows_destroy_device	58 @n 698 static void @n(struct libusb_device *dev)
+windows_device_handle_priv	57 @n 349 struct @n {
+windows_device_priv	57 @n 344 union @n {
+windows_error_str	58 @n 48 const char *@n(DWORD error_code)
+windows_exit	58 @n 567 static void @n(struct libusb_context *ctx)
+windows_force_sync_completion	58 @n 294 void @n(struct usbi_transfer *itransfer, ULONG size)
+windows_get_active_config_descriptor	58 @n 632 static int @n(struct libusb_device *dev,
+windows_get_config_descriptor	58 @n 639 static int @n(struct libusb_device *dev,
+windows_get_config_descriptor_by_value	58 @n 646 static int @n(struct libusb_device *dev,
+windows_get_configuration	58 @n 653 static int @n(struct libusb_device_handle *dev_handle, uint8_t *config)
+windows_get_device_list	58 @n 611 static int @n(struct libusb_context *ctx, struct discovered_devs **discdevs)
+windows_handle_transfer_completion	58 @n 779 static int @n(struct usbi_transfer *itransfer)
+windows_init	58 @n 490 static int @n(struct libusb_context *ctx)
+windows_iocp_thread	58 @n 413 static unsigned __stdcall @n(void *arg)
+windows_open	64 @n 491 static HANDLE @n(struct libusb_device_handle *dev_handle, const char *path, DWORD access)
+windows_open	58 @n 617 static int @n(struct libusb_device_handle *dev_handle)
+windows_release_interface	58 @n 673 static int @n(struct libusb_device_handle *dev_handle, uint8_t interface_number)
+windows_reset_device	58 @n 692 static int @n(struct libusb_device_handle *dev_handle)
+windows_set_configuration	58 @n 659 static int @n(struct libusb_device_handle *dev_handle, int config)
+windows_set_interface_altsetting	58 @n 679 static int @n(struct libusb_device_handle *dev_handle,
+windows_set_option	58 @n 592 static int @n(struct libusb_context *ctx, enum libusb_option option, va_list ap)
+windows_submit_transfer	58 @n 704 static int @n(struct usbi_transfer *itransfer)
+windows_transfer_priv	57 @n 357 struct @n {
+windows_usb_api_backend	56 @n 74 struct @n {
+windows_version	57 @n 146 enum @n {
+winusb_cancel_transfer	64 @n 2103 static int @n(struct usbi_transfer *itransfer)
+winusb_claim_interface	64 @n 1976 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface)
+winusb_clear_halt	64 @n 2021 static int @n(struct libusb_device_handle *dev_handle, unsigned char endpoint)
+winusb_clear_transfer_priv	64 @n 2044 static void @n(struct usbi_transfer *itransfer)
+winusb_close	64 @n 1939 static void @n(struct libusb_device_handle *dev_handle)
+winusb_copy_transfer_data	64 @n 2113 static enum libusb_transfer_status @n(struct usbi_transfer *itransfer, DWORD length)
+winusb_destroy_device	64 @n 2039 static void @n(struct libusb_device *dev)
+winusb_device_handle_priv	57 @n 276 struct @n {
+winusb_device_priv	57 @n 241 struct @n {
+winusb_device_priv_init	56 @n 178 static inline struct winusb_device_priv *@n(struct libusb_device *dev)
+winusb_device_priv_release	56 @n 193 static inline void @n(struct libusb_device *dev)
+winusb_exit	64 @n 690 static void @n(struct libusb_context *ctx)
+winusb_get_active_config_descriptor	64 @n 1912 static int @n(struct libusb_device *dev, void *buffer, size_t len)
+winusb_get_config_descriptor	64 @n 1871 static int @n(struct libusb_device *dev, uint8_t config_index, void *buffer, size_t len)
+winusb_get_config_descriptor_by_value	64 @n 1886 static int @n(struct libusb_device *dev, uint8_t bConfigurationValue,
+winusb_get_configuration	64 @n 1947 static int @n(struct libusb_device_handle *dev_handle, uint8_t *config)
+winusb_get_device_list	64 @n 1433 static int @n(struct libusb_context *ctx, struct discovered_devs **_discdevs)
+winusb_init	64 @n 664 static int @n(struct libusb_context *ctx)
+winusb_interface	56 @n 657 struct @n {
+winusb_open	64 @n 1930 static int @n(struct libusb_device_handle *dev_handle)
+winusb_release_interface	64 @n 2012 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface)
+winusb_reset_device	64 @n 2030 static int @n(struct libusb_device_handle *dev_handle)
+winusb_set_configuration	64 @n 1960 static int @n(struct libusb_device_handle *dev_handle, uint8_t config)
+winusb_set_interface_altsetting	64 @n 1994 static int @n(struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting)
+winusb_submit_transfer	64 @n 2069 static int @n(struct usbi_transfer *itransfer)
+winusb_transfer_priv	57 @n 292 struct @n {
+winusbx_cancel_transfer	64 @n 3154 static int @n(int sub_api, struct usbi_transfer *itransfer)
+winusbx_claim_interface	64 @n 2559 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+winusbx_clear_halt	64 @n 3128 static int @n(int sub_api, struct libusb_device_handle *dev_handle, unsigned char endpoint)
+winusbx_close	64 @n 2460 static void @n(int sub_api, struct libusb_device_handle *dev_handle)
+winusbx_configure_endpoints	64 @n 2505 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+winusbx_copy_transfer_data	64 @n 3227 static enum libusb_transfer_status @n(int sub_api, struct usbi_transfer *itransfer, DWORD length)
+winusbx_exit	64 @n 2402 static void @n(void)
+winusbx_init	64 @n 2287 static bool @n(struct libusb_context *ctx)
+winusbx_native_iso_transfer_continue_stream_callback	64 @n 2847 static void WINAPI @n(struct libusb_transfer *transfer)
+winusbx_open	64 @n 2427 static int @n(int sub_api, struct libusb_device_handle *dev_handle)
+winusbx_release_interface	64 @n 2676 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface)
+winusbx_reset_device	64 @n 3185 static int @n(int sub_api, struct libusb_device_handle *dev_handle)
+winusbx_set_interface_altsetting	64 @n 2824 static int @n(int sub_api, struct libusb_device_handle *dev_handle, uint8_t iface, uint8_t altsetting)
+winusbx_submit_bulk_transfer	64 @n 3068 static int @n(int sub_api, struct usbi_transfer *itransfer)
+winusbx_submit_control_transfer	64 @n 2765 static int @n(int sub_api, struct usbi_transfer *itransfer)
+winusbx_submit_iso_transfer	64 @n 2878 static int @n(int sub_api, struct usbi_transfer *itransfer)
