@@ -12,7 +12,7 @@ The code graph is an attempt at aiding tool to visualize overall dependency and 
 
 ### v0.0
 
-v0 Initial draft proof of concept version for libusb
+v0 Initial draft proof of concept version for [libusb](https://hantianjz.github.io/Code-Graph/publish_graph/libusb_graph.html)
 ![v0 Graph](/resources/9Yq9zxpT72ttfSa.png)
 
 **Feature**
