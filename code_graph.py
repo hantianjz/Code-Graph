@@ -73,7 +73,7 @@ var options = {
 
 
 def generate_graph(nodes, edges):
-  g = Network("800px", "800px")
+  g = Network(height=None, width=None)
   g.add_nodes(list(nodes.keys()), label=list(nodes.values()))
   g.add_edges(edges)
   g.set_options(network_options)
