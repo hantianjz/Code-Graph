@@ -1,5 +1,5 @@
 # Code-Graph
-A visualization tool for graphing relationships of a code base
+A visualization tool for graphing relationships of a C/Cpp code base
 
 ## Overview
 This project is heavily inspired by the Obsidian Graph view tool. To visualize one's knowledge/notes. And I thought it be fun to do the same for source codes.
